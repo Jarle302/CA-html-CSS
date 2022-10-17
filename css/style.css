@@ -4,9 +4,47 @@
   --background-white:#F5F5F5;
   --background-grey:#D9D9D9;
   --blue:#0093B3;
+
+}
+
+img{
+    max-width: 20%;
+}
+
+/* Navigation  */
+
+header{
+display:flex ;
+justify-content: space-between;
+}
+
+nav{
+    padding: 8vh 3vh;
+    background: beige;
+    right: 0;
+    position: fixed;
+    top: 0px;
+}
+#hamburger-menu{
+    z-index: 2000;
+}
+nav, 
+#hamburger-menu{
+    display: none;
 }
 
 
+#hamburger-menu:checked ~ nav{
+    display: block;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    padding: 20px;
+}
 
 
 /*Homepage*/
