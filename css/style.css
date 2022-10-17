@@ -12,6 +12,7 @@ img {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 /* Navigation  */
@@ -45,7 +46,13 @@ nav ul {
 }
 
 nav li {
-  padding: 20px;
+    padding: 13px;
+    border-radius: 12px;
+}
+
+
+.active{
+    background-color: var(--button--orange);
 }
 
 /*Homepage*/
