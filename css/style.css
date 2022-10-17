@@ -4,6 +4,13 @@
   --background-white: #f5f5f5;
   --background-grey: #d9d9d9;
   --blue: #0093b3;
+  --heading-white:#ffffff;
+  --heading-dark:#000000;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
 }
 
 img {
@@ -46,13 +53,12 @@ nav ul {
 }
 
 nav li {
-    padding: 13px;
-    border-radius: 12px;
+  padding: 13px;
+  border-radius: 12px;
 }
 
-
-.active{
-    background-color: var(--button--orange);
+.active {
+  background-color: var(--button--orange);
 }
 
 /*Homepage*/
