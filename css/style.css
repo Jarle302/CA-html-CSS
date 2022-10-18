@@ -86,6 +86,9 @@ h1 {
 /*Contact */
 /*About */
 
+.about__main{
+  background-image: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-resized.jpg);
+}
 .about__section-main {
   background: var(--background-grey);
   max-width: 40%;
