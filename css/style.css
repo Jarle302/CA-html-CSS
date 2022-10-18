@@ -6,12 +6,16 @@
   --blue: #0093b3;
   --heading-white:#ffffff;
   --heading-dark:#000000;
+  --h1-font-size:4rem;
+  
 }
 
 body{
     display: grid;
     grid-template-rows: auto 1fr auto;
    min-height: 100vh;
+   font-family: 'Noto Sans', sans-serif;
+
 }
 
 img {
@@ -61,6 +65,17 @@ nav li {
 .active {
   background-color: var(--button--orange);
 }
+
+
+/* Headnings  */
+h1,h2,h3{
+  text-align: center;
+ font-family: 'Noto Serif', serif;;
+}
+h1{
+  font-size: (--h1-font-size);
+}
+
 
 /*Homepage*/
 /*Contact */
