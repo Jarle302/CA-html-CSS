@@ -6,7 +6,7 @@
   --blue: #0093b3;
   --heading-white: #ffffff;
   --heading-dark: #000000;
-  --h1__font-size: 4rem;
+  --h1__font-size: 2.5rem;
 }
 
 body {
@@ -89,11 +89,14 @@ h1 {
 .about__section-main {
   background: var(--background-grey);
   max-width: 40%;
-  margin: 152px auto 20px;
+  margin: 0 auto 20px;
   padding: 5% 10% 5% 10%;
   border-radius: 8px;
 }
 
+.about__h1{
+  margin-top: 200px;
+}
 /*your order */
 /*Order-success */
 /*checkout */
