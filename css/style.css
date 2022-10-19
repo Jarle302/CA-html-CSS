@@ -7,9 +7,9 @@
   --heading-white: #ffffff;
   --heading-dark: #000000;
   --h1__font-size: 2.5rem;
-  --background--light-grey:#F0F0F0;
+  --background--light-grey: #f0f0f0;
+  --border-radius: 8px;
 }
-
 
 body {
   display: grid;
@@ -19,7 +19,7 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -41,7 +41,9 @@ footer {
   background-color: var(--header-footer);
 }
 
-
+.header__img--logo {
+  max-width: 20%;
+}
 
 nav {
   padding: 8vh 3vh;
@@ -112,36 +114,37 @@ h1 {
 /*checkout */
 /*Product list*/
 
-.product-list__main{
+.product-list__main {
   background-color: var(--background-grey);
 }
 
-.product-list__section{
+.product-list__section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
 }
 
-.product-list__card{
+.product-list__card {
   display: flex;
-    flex-wrap: wrap;
-    background-color: var(--background--light-grey);
-    margin: 5px;
-    border-radius: 8px;
-    justify-content: center;
-    padding-top: 15px;
+  flex-wrap: wrap;
+  background-color: var(--background--light-grey);
+  margin: 5px;
+  border-radius: var(--border-radius);
+  justify-content: center;
+  padding-top: 15px;
 }
 
-.product-list__card img{
-    max-height: 179px;
-    width: auto;
+.product-list__card img {
+  max-height: 179px;
+  width: auto;
 }
 
-.product-list__div--name-and-price{
+.product-list__div--name-and-price {
   background-color: var(--background-white);
   min-width: 100%;
+  border-radius: var(--border-radius);
 }
-.product-list__div--name-and-price p{
+.product-list__div--name-and-price p {
   margin: 0;
   text-align: start;
 }
