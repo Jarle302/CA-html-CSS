@@ -93,9 +93,8 @@ h1 {
 /*About */
 
 .about__main {
-  background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-re1.jpg)
-    no-repeat top;
-  background-size: cover;
+  background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-rer14.jpg) no-repeat top left;
+    background-size: cover;
 }
 .about__section-main {
   background: var(--background-grey);
