@@ -7,7 +7,9 @@
   --heading-white: #ffffff;
   --heading-dark: #000000;
   --h1__font-size: 2.5rem;
+  --background--light-grey:#F0F0F0;
 }
+
 
 body {
   display: grid;
@@ -17,10 +19,10 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-img {
-  max-width: 20%;
+img{
+  max-width: 100%;
+  height: auto;
 }
-
 a {
   text-decoration: none;
   color: white;
@@ -87,7 +89,8 @@ h1 {
 /*About */
 
 .about__main {
-  background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-re100.jpg) no-repeat top;
+  background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-re100.jpg)
+    no-repeat top;
   background-size: cover;
 }
 .about__section-main {
@@ -106,4 +109,38 @@ h1 {
 /*Order-success */
 /*checkout */
 /*Product list*/
+
+.product-list__main{
+  background-color: var(--background-grey);
+}
+
+.product-list__section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+
+.product-list__card{
+  display: flex;
+    flex-direction: column;
+    background-color: var(--background--light-grey);
+    margin: 5px;
+    border-radius: 8px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.product-list__card img{
+  object-fit: cover;
+ max-width: 80%;
+}
+
+.product-list__div--name-and-price{
+  background-color: var(--background-white);
+  min-width: 100%;
+}
+.product-list__div--name-and-price p{
+  margin: 0;
+  text-align: start;
+}
 /*Product spesific*/
