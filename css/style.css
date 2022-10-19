@@ -145,7 +145,14 @@ h1 {
   border-radius: var(--border-radius);
 }
 .product-list__div--name-and-price p {
-  margin: 0;
   text-align: start;
+}
+
+.card__p--product-name{
+margin:5px 0 0 8px;
+}
+        
+.card__p--price{
+  margin:0 0 5px 8px;
 }
 /*Product spesific*/
