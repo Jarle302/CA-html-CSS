@@ -93,7 +93,7 @@ h1 {
 /*About */
 
 .about__main {
-  background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-re100.jpg)
+  background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-re1.jpg)
     no-repeat top;
   background-size: cover;
 }
@@ -122,8 +122,6 @@ h1 {
   justify-content: center;
   padding: 68px 30px 30px 30px;
 }
-
-
 
 .product-list__section {
   display: grid;
