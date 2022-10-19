@@ -92,7 +92,8 @@ h1 {
 /*Contact */
 
 .contact__main{
-  background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized.jpg);
+  background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized.jpg) no-repeat top;
+  background-size: cover;
 }
 /*About */
 
