@@ -90,6 +90,10 @@ h1 {
 
 /*Homepage*/
 /*Contact */
+
+.contact__main{
+  background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized.jpg);
+}
 /*About */
 
 .about__main {
