@@ -41,6 +41,8 @@ footer {
   background-color: var(--header-footer);
 }
 
+
+
 nav {
   padding: 8vh 3vh;
   background: var(--background-grey);
@@ -122,17 +124,17 @@ h1 {
 
 .product-list__card{
   display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-color: var(--background--light-grey);
     margin: 5px;
     border-radius: 8px;
-    align-items: center;
+    justify-content: center;
     padding-top: 15px;
 }
 
 .product-list__card img{
-  object-fit: cover;
- max-width: 80%;
+    max-height: 179px;
+    width: auto;
 }
 
 .product-list__div--name-and-price{
