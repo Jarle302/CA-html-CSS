@@ -117,6 +117,13 @@ h1 {
 .product-list__main {
   background-color: var(--background-grey);
 }
+.logo__div--product-list {
+  display: flex;
+  justify-content: center;
+  padding: 68px 30px 30px 30px;
+}
+
+
 
 .product-list__section {
   display: grid;
@@ -148,11 +155,11 @@ h1 {
   text-align: start;
 }
 
-.card__p--product-name{
-margin:5px 0 0 8px;
+.card__p--product-name {
+  margin: 5px 0 0 8px;
 }
-        
-.card__p--price{
-  margin:0 0 5px 8px;
+
+.card__p--price {
+  margin: 0 0 5px 8px;
 }
 /*Product spesific*/
