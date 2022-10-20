@@ -92,9 +92,23 @@ h1 {
 /*Contact */
 
 .contact__main{
-  background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized.jpg) no-repeat top;
+  background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized1.jpg) no-repeat center;
   background-size: cover;
 }
+
+
+fieldset{
+  border:solid orange 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form--container{
+  border:1px solid var(--button--orange);
+  background-color: var(--background-grey);
+}
+
+
 /*About */
 
 .about__main {
