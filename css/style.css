@@ -6,6 +6,8 @@
   --blue: #0093b3;
   --heading-white: #ffffff;
   --heading-dark: #000000;
+  --blue:#0093B3;
+  --contact-brown:#B3590C;
   --h1__font-size: 2.5rem;
   --background--light-grey: #f0f0f0;
   --border-radius: 8px;
@@ -96,6 +98,23 @@ h1 {
   background-size: cover;
 }
 
+.contact__div--email-us{
+background-color: var(--blue);
+padding: 21px;
+border-radius:53px
+}
+
+.contact__div--visit-us{
+  background-color: var(--contact-brown);
+padding: 21px;
+border-radius:53px
+}
+
+.contact__div--call-us{
+  background-color: var(--contact-brown);
+  padding: 21px;
+  border-radius:53px
+}
 
 fieldset{
   border:solid orange 1px;
