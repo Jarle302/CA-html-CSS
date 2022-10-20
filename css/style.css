@@ -101,19 +101,25 @@ h1 {
 .contact__div--email-us{
 background-color: var(--blue);
 padding: 21px;
-border-radius:53px
+border-radius:53px;
+    float: right;
+    clear: both;
 }
 
 .contact__div--visit-us{
   background-color: var(--contact-brown);
 padding: 21px;
-border-radius:53px
+border-radius:53px;
+float: right;
+clear: both;
 }
 
 .contact__div--call-us{
   background-color: var(--contact-brown);
   padding: 21px;
-  border-radius:53px
+  border-radius:53px;
+  float: right;
+  clear: both;
 }
 
 fieldset{
@@ -126,6 +132,7 @@ fieldset{
   border:1px solid var(--button--orange);
   background-color: var(--background-grey);
   margin: 0 7%;
+  clear:both;
 }
 
 .form--container input{
