@@ -98,29 +98,20 @@ h1 {
   background-size: cover;
 }
 
-.contact__div--email-us{
+.contact__div--email-us,
+.contact__div--visit-us,
+.contact__div--call-us{
 background-color: var(--blue);
 padding: 21px;
-border-radius:53px;
+border-radius:53px 0px 0px 53px;
     float: right;
     clear: both;
 }
 
 .contact__div--visit-us{
-  background-color: var(--contact-brown);
-padding: 21px;
-border-radius:53px;
-float: right;
-clear: both;
+  background-color: var(--button--orange);
 }
 
-.contact__div--call-us{
-  background-color: var(--contact-brown);
-  padding: 21px;
-  border-radius:53px;
-  float: right;
-  clear: both;
-}
 
 fieldset{
   border:solid orange 1px;
