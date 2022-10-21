@@ -106,6 +106,7 @@ h1 {
 .homepage__section--third{
   background:url(../Backgrounds/gage-walker-6LT0b6LmCt4-unsplash-resized11.jpg) bottom;
   min-height:66vh;
+  display: flex;
 }
 
 .homepage__h1,
@@ -114,18 +115,22 @@ h1 {
 }
 
 .homepage__h2--first{
-  color:var(--heading-white);
-  margin-top: -20px;
-  position: absolute;
-  left: 108px;
-  font-size: 2.3rem;
-  top: 645px;
-  line-height: 23px;
+  color: var(--heading-white);
+    margin-top: -20px;
+    position: absolute;
+    left: 117px;
+    font-size: 1.6rem;
+    top: 672px;
+    text-align: center;
+    line-height: 23px;
 }
 
 .homepage__h2--second{
-  color:var(--button--orange);
-  
+  color: var(--button--orange);
+  font-size: 2.3rem;
+  top: 661px;
+  position: absolute;
+  left: 117px;  
 }
 
 /*Contact */
