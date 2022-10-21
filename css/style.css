@@ -101,7 +101,8 @@ h1 {
   background:url(../backgrounds/gage-walker-6LT0b6LmCt4-unsplash-resized1.jpg)
 }
 
-.homepage__h1{
+.homepage__h1,
+.homepage__h2{
   margin:0;
 }
 
