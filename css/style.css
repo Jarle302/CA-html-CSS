@@ -98,12 +98,34 @@ h1 {
 }
 
 .homepage__section--second{
-  background:url(../backgrounds/gage-walker-6LT0b6LmCt4-unsplash-resized1.jpg)
+  background: url(../Backgrounds/haitham-sk1NZUCNDjQ-unsplash-resize.jpg) center center;
+    background-size: cover;
+  min-height:44vh;
+}
+
+.homepage__section--third{
+  background:url(../backgrounds/gage-walker-6LT0b6LmCt4-unsplash-resized1.jpg);
+  min-height:66vh;
 }
 
 .homepage__h1,
 .homepage__h2{
   margin:0;
+}
+
+.homepage__h2--first{
+  color:var(--heading-white);
+  margin-top: -20px;
+  position: absolute;
+  left: 108px;
+  font-size: 2.3rem;
+  top: 645px;
+  line-height: 23px;
+}
+
+.homepage__h2--second{
+  color:var(--button--orange);
+  
 }
 
 /*Contact */
