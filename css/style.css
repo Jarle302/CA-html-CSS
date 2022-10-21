@@ -97,6 +97,10 @@ h1 {
   min-height: 67vh;
 }
 
+.homepage__section--second{
+  background:url(../backgrounds/gage-walker-6LT0b6LmCt4-unsplash-resized1.jpg)
+}
+
 .homepage__h1{
   margin:0;
 }
