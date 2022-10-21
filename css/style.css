@@ -119,7 +119,7 @@ border-radius:53px 0px 0px 53px;
 .form--contact{
   display: flex;
   flex-direction: column;
-  margin: 2px 2px;
+  margin: 215px 2px 77px;
 }
 
 
@@ -131,6 +131,13 @@ fieldset{
 
 .contact__form__button{
   align-self: center;
+  padding: 18px;
+    border-radius: 24px;
+    background: var(--button--orange);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Noto Serif';
+    margin-top: -16px;
 }
 
 .form--container{
