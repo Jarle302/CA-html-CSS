@@ -11,6 +11,7 @@
   --h1__font-size: 2.5rem;
   --background--light-grey: #f0f0f0;
   --border-radius: 8px;
+  --success-green:#149000;
 }
 
 body {
@@ -226,7 +227,7 @@ fieldset {
   color: var(--heading-white);
 }
 /*your order */
-/*Order-success */
+
 /*checkout */
 /*Product list*/
 
@@ -282,7 +283,7 @@ fieldset {
   position: relative;
 }
 
-.product-specific__h1{
+.product-specific__h1 {
   margin: 92px 0 0 0;
 }
 
@@ -300,20 +301,57 @@ fieldset {
 
 .product-specific__img {
   max-width: 65%;
-  margin: 40px  0 0 0;
+  margin: 40px 0 0 0;
 }
 
 .product-specific__div--name-and-price {
-align-self: flex-start;
-font-size: 1.4rem;
-margin-left: 20px;
+  align-self: flex-start;
+  font-size: 1.4rem;
+  margin-left: 20px;
 }
 
 .product-specific__p--name,
-.product-specific__p--price{
+.product-specific__p--price {
   margin: 0;
 }
 
 .product-specific__button--cta {
   margin-bottom: -20px;
+}
+
+
+/*Order-success */
+
+.order-success__section{
+  background-color: var(--background-grey);
+display:flex;
+flex-direction:column;
+align-items:center;
+min-height: 100vh;
+}
+
+.order-success__h1{
+  color: var(--success-green);
+  margin-top: 72px;
+}
+
+.order-success__h2{
+  text-align: start;
+  padding: 0 0 0 20px;
+  margin-bottom: 2px;
+}
+
+.order-success__p{
+  padding: 0 20px;
+  margin: 0;
+}
+
+.order-success__div--buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-success__div--image{
+  margin: 18px auto;
 }
