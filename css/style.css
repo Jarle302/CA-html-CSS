@@ -269,10 +269,28 @@ fieldset{
 }
 /*Product spesific*/
 
+.product-specific__section{
+  position: relative;
+}
+
+.product-specific__section::after{
+  content: "";
+  padding: 40px;
+  z-index: 800;
+  position: absolute;
+  background-color: var(--background-grey);
+}
+
 .product-specific__div{
+  position: absolute;
+  z-index: 1000;
 
 }
 
+.product-specific__img{
+  max-width: 50%;
+}
+
 .product-specific__div--name-and-price{
-  
+
 }
