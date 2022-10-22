@@ -207,27 +207,28 @@ fieldset {
   padding: 11px 0;
 }
 
-.checkout__form__div--first{
+.checkout__form__div--first {
   background-color: var(--background--light-grey);
 }
 
-.checkout__form__div--second{
+.checkout__form__div--second {
   background-color: var(--background-grey);
 }
 
-.checkout__form__input--radio{
+.checkout__form__input--radio {
   display: none;
 }
 
-.checkout__form__div--radio{
+.checkout__form__div--radio {
   font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
-input[type="radio"]:checked+label{
+input[type="radio"]:checked + label {
   border: 2px solid var(--success-green);
 }
-
-
 
 /*About */
 
