@@ -38,14 +38,14 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="checkout__main">
       <form action="POST">
-        <section>
+        <section class="checkout__section">
           <a href="#"></a>
           <h1>Checkout</h1>
           <h2>Billing details</h2>
-          <div class="contact__form__div--first">
-            <fieldset>
+          <div class="checkout__form__div--first">
+            <fieldset class="checkout__fieldset--first">
               <label for="email--checkout">Email address</label>
               <input type="text" name="email--checkout" id="email--checkout" />
               <label for="first-name--checkout">first name</label>
@@ -68,6 +68,7 @@
               />
             </fieldset>
           </div>
+          <div class="checkout__div--second-background">
           <h2>Payment options</h2>
           <div class="checkout__form__div--radio">
             <input
@@ -114,7 +115,7 @@
             <label for="paypal"><i class="fa-brands fa-paypal"></i></label>
           </div>
           <div class="checkout__form__div--second">
-            <fieldset>
+            <fieldset class="checkout__fieldset--second">
               <label for="creditcardnumber--checkout">creditcardnumber</label>
               <input
                 type="number"
@@ -138,6 +139,7 @@
             </fieldset>
           </div>
           <button>Checkout</button>
+        </div>
         </section>
       </form>
     </main>
