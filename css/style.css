@@ -233,10 +233,11 @@ fieldset {
 
 .checkout__section{
   max-width: 303px;
-  margin: auto;
-  padding: 20px;
-background-color: var(--background--light-grey);
+    margin: auto;
+    padding: 40px 20px;
+    background-color: var(--background--light-grey);
 }
+
 
 
 
@@ -264,6 +265,7 @@ border: none;
 
 .checkout__form__div--second {
   background-color: var(--background-grey);
+  margin-bottom:20px;
 }
 
 .checkout__form__input--radio {
