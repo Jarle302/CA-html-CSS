@@ -22,6 +22,10 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+.back-arrow{
+  color: #000000;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -273,7 +277,7 @@ border: none;
 }
 
 .checkout__form__div--radio {
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   gap: 8px;
