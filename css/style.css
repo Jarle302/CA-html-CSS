@@ -233,6 +233,23 @@ fieldset {
 }
 /*your order */
 
+.your-order__section{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.your-order__div--content{
+  background-color: var(--background-grey);
+  border-radius: 40px;
+  padding: 120px 30px;
+}
+
+.your-order__div--content img{
+  max-width: 60%;
+}
+
 /*checkout */
 
 .checkout__section{
@@ -241,6 +258,7 @@ fieldset {
     padding: 40px 20px;
     background-color: var(--background--light-grey);
 }
+
 
 
 
