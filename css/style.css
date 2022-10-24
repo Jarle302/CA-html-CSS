@@ -241,16 +241,27 @@ fieldset {
 }
 
 .your-order__div--content{
-  background-color: var(--background-grey);
+  
   border-radius: 40px;
-  padding: 120px 30px;
+  padding: 28px 20px;
 }
 
 .your-order__div--content img{
   max-width: 60%;
 }
 
+table{
+  border-collapse: collapse;
+}
 
+td{
+  padding: 1px 68px 0px 0;
+ 
+}
+
+.your-order__table__tr--shipping{
+  background-color: white;
+}
 /*checkout */
 
 .checkout__section{
