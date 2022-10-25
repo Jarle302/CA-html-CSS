@@ -133,7 +133,8 @@ h1 {
 }
 
 .homepage__section--third {
-  background: url(../Backgrounds/gage-walker-6LT0b6LmCt4-unsplash-resized11.jpg) bottom;
+  background: url(../Backgrounds/gage-walker-6LT0b6LmCt4-unsplash-bg1.jpg) center;
+  background-size: cover;
   min-height: 66vh;
   display: flex;
   flex-direction: column;
@@ -163,6 +164,17 @@ h1 {
 .homepage__div--h2-h2{
   margin-top:-20px;
 }
+
+.homepage__ul--selling-points{
+  color: var(--heading-white);
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.homepage__ul--selling-points li{
+  padding: 20px 0px;
+}
+
 
 /*Contact */
 
