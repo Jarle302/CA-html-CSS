@@ -8,7 +8,7 @@
   --heading-dark: #000000;
   --blue: #0093b3;
   --contact-brown: #b3590c;
-  --h1__font-size: 2.5rem;
+  --h1__font-size: 2rem;
   --background--light-grey: #f0f0f0;
   --border-radius: 8px;
   --success-green: #149000;
@@ -108,16 +108,21 @@ h1 {
 
 /*Homepage*/
 .homepage__section--first {
-  background: url(../backgrounds/johannes-andersson-IqBsJY-buKo-unsplash-resized.jpg)
-    no-repeat;
-  background-size: cover;
-  min-height: 67vh;
-  display: flex;
-  flex-direction: column;
+  background: url(../backgrounds/johannes-andersson-IqBsJY-buKo-unsplash-bg1.jpg) no-repeat;
+    background-size: cover;
+    min-height: 67vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homepage__h1{
+  color:white;
 }
 
 .homepage__button{
   align-self: center;
+  margin-bottom: -29px;
 }
 
 .homepage__section--second {
