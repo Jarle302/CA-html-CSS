@@ -63,7 +63,8 @@ nav {
   z-index: 2000;
 }
 nav,
-#hamburger-menu {
+#hamburger-menu,
+#exit-menu {
   display: none;
 }
 
