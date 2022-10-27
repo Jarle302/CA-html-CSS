@@ -495,3 +495,32 @@ color:var(--small-text--black)
   margin: 68px auto;
 }
 
+@media screen and (min-width:650px){
+
+/* nav */
+
+.hamburger-menu__icon{
+  display: none;
+}
+
+nav{
+  display: flex;
+  padding: 0 0 0 0;
+    background: none;
+    right: 0;
+    position: fixed;
+    top: 0px;
+}
+
+nav li{
+  display: inline-block;
+  color: var(--small-text--black);
+}
+
+nav ul{
+  display: flex;
+    margin: 0;
+    gap: 45px;
+}
+
+}
