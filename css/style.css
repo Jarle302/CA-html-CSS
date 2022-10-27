@@ -584,7 +584,7 @@ input[type="radio"]:checked + label {
 gap:20px;
 }
 
-.product-list__section::before{
+/*.product-list__section::before{
   content: "";
     background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg) no-repeat center;
     background-size: cover;
@@ -592,5 +592,18 @@ gap:20px;
     padding: 121px;
     grid-row: 1/2;
 
+} */
+
+.product-list__h1--our-jackets{
+  background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  grid-column: 1/5;
+  padding: 209px;
+  grid-row: 1/2;
+  font-size: 3rem;
+
 }
+
+
+
 }
