@@ -583,4 +583,13 @@ input[type="radio"]:checked + label {
   grid-template-columns: repeat(4,1fr );
 }
 
+.logo__div--product-list::after{
+  content: "";
+  background-image:url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg);
+    padding: 40px;
+    background-size: contain;
+    min-height: 60px;
+    width: 200px;
+}
+
 }
