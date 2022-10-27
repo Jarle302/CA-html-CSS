@@ -530,6 +530,23 @@ input[type="radio"]:checked + label {
 		min-height: 65em;
 	}
 
+  .homepage__section--first::before{
+    content: "";
+    background: url(/images/RainyDays_Logo.png) no-repeat;
+    padding: 40px;
+    background-size: contain;
+    min-height: 60px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    left: 24px;
+    top: 111px;
+}
+
+.homepage__h1{
+  margin: 301px auto;
+}
+
 	.homepage__section--second {
 		display: none;
 	}
