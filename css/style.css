@@ -581,15 +581,16 @@ input[type="radio"]:checked + label {
 
 .product-list__section{
   grid-template-columns: repeat(4,1fr );
+gap:20px;
 }
 
-.logo__div--product-list::after{
+.product-list__section::before{
   content: "";
-  background-image:url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg);
-    padding: 40px;
-    background-size: contain;
-    min-height: 60px;
-    width: 200px;
-}
+    background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    grid-column: 2/5;
+    padding: 121px;
+    grid-row: 1/2;
 
+}
 }
