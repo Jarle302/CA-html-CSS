@@ -192,9 +192,10 @@ h1 {
 /*Contact */
 
 .contact__main {
-	background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized1.jpg)
+	background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized2.jpg)
 		no-repeat center;
 	background-size: cover;
+	color: var(--heading-white);
 }
 .contact__section--contact-info {
 	display: flex;
@@ -218,6 +219,7 @@ h1 {
 .form--contact {
 	display: flex;
 	flex-direction: column;
+	color: var(--heading-dark);
 }
 
 .contact__section--h2-and-form{
