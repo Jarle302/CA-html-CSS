@@ -218,8 +218,12 @@ h1 {
 .form--contact {
 	display: flex;
 	flex-direction: column;
-	margin: 215px 2px 77px;
 }
+
+.contact__section--h2-and-form{
+	margin: 200px 0 0 auto;
+	}
+	
 
 fieldset {
 	border: solid orange 1px;
@@ -604,6 +608,20 @@ gap:20px;
 
 }
 
+/*____________________________________contact_______________________________________ */
 
+.form--contact{
+	margin: 0;
+
+}
+
+.contact__section--contact-info{
+	margin-top: 10%;
+}
+
+.contact__section--h2-and-form{
+max-width: 45%;
+
+}
 
 }
