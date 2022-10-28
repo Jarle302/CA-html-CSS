@@ -599,13 +599,13 @@ input[type="radio"]:checked + label {
 } */
 
   .product-list__h1--our-jackets {
-    background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg)
-      no-repeat center;
+	background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg) no-repeat center;
     background-size: cover;
     grid-column: 1/5;
-    padding: 209px;
+    padding: 126px;
     grid-row: 1/2;
     font-size: 3rem;
+    margin: 0;
   }
 
   /*____________________________________contact_______________________________________ */
@@ -620,6 +620,10 @@ input[type="radio"]:checked + label {
 
   .contact__section--h2-and-form {
     max-width: 45%;
+  }
+
+  .contact__form__button{
+	margin-bottom: 20px;
   }
 
   /* ------------------Your order----------------  */
@@ -644,5 +648,29 @@ input[type="radio"]:checked + label {
 
 .checkout__section{
 	border-left: 10px solid var(--button--orange);
+right:9%;
+position: relative;
 }
+
+.checkout__section::after{
+	content: "";
+	height: 0;
+	width:0;
+	border-right: 10px solid black;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+
+
+
+
+/* _______________________About________________________ */
+
+.about__h1{
+	
+    margin-top: 37%;
+
+}
+
 }
