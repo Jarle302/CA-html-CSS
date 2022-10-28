@@ -626,4 +626,20 @@ max-width: 45%;
 
 }
 
+
+
+/* ------------------Your order----------------  */ 
+
+
+.product-specific__div{
+
+		z-index: 1000;
+		background-color: var(--background--light-grey);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: auto;
+		position: static;
+}
+
 }
