@@ -651,16 +651,16 @@ input[type="radio"]:checked + label {
 right:9%;
 position: relative;
 }
-
+/*
 .checkout__section::after{
 	content: "";
 	height: 0;
 	width:0;
-	border-right: 10px solid black;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
+	border-right: 400px solid black;
+	border-top: 400px solid transparent;
+	border-bottom: 400px solid transparent;
 }
-
+*/
 
 
 
