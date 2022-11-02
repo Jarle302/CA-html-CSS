@@ -86,7 +86,11 @@ nav li {
 
 .nav__li--active {
   background-color: var(--button--orange);
+}
+
+.nav__li--active a{
   color: var(--small-text--black);
+
 }
 
 /* Headings  */
