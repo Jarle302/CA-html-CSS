@@ -82,10 +82,11 @@ nav ul {
 nav li {
   padding: 13px;
   border-radius: 12px;
+  color: var(--small-text--black);
 }
 
 .nav__li--active {
-  background-color: var(--blue);
+  background-color: var(--button--orange);
 }
 
 /* Headings  */
