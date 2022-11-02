@@ -29,7 +29,7 @@ img {
 }
 a {
   text-decoration: none;
-  color: var(--small-text--black);
+  color: white;
 }
 
 /* Navigation  */
@@ -82,11 +82,11 @@ nav ul {
 nav li {
   padding: 13px;
   border-radius: 12px;
-  
 }
 
 .nav__li--active {
   background-color: var(--button--orange);
+  color: var(--small-text--black);
 }
 
 /* Headings  */
