@@ -131,7 +131,7 @@ h1 {
 }
 
 .homepage__h1 {
-  color: white;
+  color:var(--heading-white);
 }
 
 .homepage__button {
