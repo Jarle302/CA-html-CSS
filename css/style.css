@@ -99,10 +99,13 @@ h2,
 h3 {
   text-align: center;
   font-family: "Noto Serif", serif;
+  text-shadow: 0px 0px 6px white;
+
 }
 h1 {
   font-size: var(--h1__font-size);
 }
+
 
 /* buttons */
 
@@ -181,7 +184,7 @@ h1 {
 }
 
 .homepage__h2--second {
-  color: #ff7600;
+  color: #ffffff;
   font-size: 2.3rem;
   margin-top: -20px;
   text-shadow: 0px 0px 13px black;
@@ -195,7 +198,7 @@ h1 {
   color: var(--heading-white);
   list-style: none;
   font-size: 1.4rem;
-  text-shadow: 0px 0px 6px white;
+  text-shadow: 0px 0px 6px #ff8822;
 
 }
 
@@ -256,6 +259,7 @@ fieldset {
   background-color: var(--background-grey);
   margin: 0 7%;
   clear: both;
+  box-shadow: 2px 2px 14px black;
 }
 
 .form--container input {
