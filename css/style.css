@@ -624,15 +624,7 @@ input[type="radio"]:checked + label {
     gap: 20px;
   }
 
-  /*.product-list__section::before{
-  content: "";
-    background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg) no-repeat center;
-    background-size: cover;
-    grid-column: 2/5;
-    padding: 121px;
-    grid-row: 1/2;
-
-} */
+ 
 
   .product-list__h1--our-jackets {
 	background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg) no-repeat center;
@@ -689,19 +681,36 @@ input[type="radio"]:checked + label {
 
 .checkout__section{
 	border-left: 10px solid var(--button--orange);
-right:9%;
+right:23%;
 position: relative;
 }
-/*
-.checkout__section::after{
-	content: "";
-	height: 0;
-	width:0;
-	border-right: 400px solid black;
-	border-top: 400px solid transparent;
-	border-bottom: 400px solid transparent;
+
+.checkout__main::after{
+  content: "";
+  height: 0;
+  width: 0;
+  border-right: 400px solid var(--background--light-grey);
+  border-top: 400px solid transparent;
+  border-bottom: 400px solid transparent;
+  float: right;
+  position: absolute;
+  top: 108px;
+  right: 0;
 }
 
+
+.checkout__main::before{
+  content: "";
+  background: url(/images/RainyDays_Logo.png) no-repeat;
+  padding: 40px;
+  background-size: contain;
+  min-height: 60px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 422px;
+  z-index: 2000;
+}
 
 
 
@@ -714,4 +723,14 @@ position: relative;
 
 }
 
+
+
+
+
+/* your order*/
+
+
 }
+
+
+
