@@ -676,7 +676,7 @@ input[type="radio"]:checked + label {
   margin: auto;
   border-left: 10px var(--button--orange) solid;
 
-/*__________________________Checkpoint____________________________________*/
+/*__________________________Checkout&&__your-order____________________________________*/
   }
 
 .checkout__section{
@@ -723,6 +723,19 @@ position: relative;
 }
 
 
+.your-order__section{
+  position: absolute;
+}
+
+
+
+/*________________Order--success_______________________*/
+
+.order-success__section{
+  background: none;
+  border-left: none;
+}
+
 /* _______________________About________________________ */
 
 .about__h1{
@@ -732,11 +745,6 @@ position: relative;
 }
 
 
-/* your order*/
-
-.your-order__section{
-  position: absolute;
-}
 
 
 
