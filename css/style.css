@@ -137,8 +137,17 @@ h1 {
   justify-content: space-between;
 }
 
+.homepage__section--first::after{
+  content: "";
+  background: url(../Backgrounds/haitham-sk1NZUCNDjQ-unsplash-resize.jpg) top 487px center;
+  background-size: 706px;
+  min-height: 16vh
+  }
+
+
 .homepage__h1 {
   color:var(--heading-white);
+  text-shadow: 0px 0px 6px white;
 }
 
 .homepage__button {
@@ -146,12 +155,7 @@ h1 {
   margin-bottom: -29px;
 }
 
-.homepage__section--second {
-  background: url(../Backgrounds/haitham-sk1NZUCNDjQ-unsplash-resize.jpg) center
-    center;
-  background-size: cover;
-  min-height: 44vh;
-}
+
 
 .homepage__section--third {
   background: url(../Backgrounds/gage-walker-6LT0b6LmCt4-unsplash-bg1.jpg)
@@ -170,7 +174,7 @@ h1 {
 .homepage__h2--first {
   color: var(--heading-white);
   margin-top: -20px;
-
+  text-shadow: 0px 0px 6px white;
   font-size: 1.6rem;
   top: 672px;
   text-align: center;
@@ -180,6 +184,7 @@ h1 {
   color: #ff7600;
   font-size: 2.3rem;
   margin-top: -20px;
+  text-shadow: 0px 0px 13px black;
 }
 
 .homepage__div--h2-h2 {
@@ -565,6 +570,10 @@ input[type="radio"]:checked + label {
     position: absolute;
     left: 24px;
     top: 111px;
+  }
+
+  .homepage__section--first::after{
+    display:none;
   }
 
   .homepage__h1 {
