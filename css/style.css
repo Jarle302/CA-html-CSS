@@ -436,6 +436,7 @@ input[type="radio"]:checked + label {
 
 .product-specific__section {
   position: relative;
+  margin-bottom: 40px;
 }
 
 .product-specific__h1 {
@@ -664,7 +665,7 @@ input[type="radio"]:checked + label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin:  auto;
     position: static;
 	max-width:400px;
 	border-radius: 12px;
