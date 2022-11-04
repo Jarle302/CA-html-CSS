@@ -215,6 +215,7 @@ h1 {
     no-repeat center;
   background-size: cover;
   color: var(--heading-white);
+  margin-bottom: 40px;
 }
 .contact__section--contact-info {
   display: flex;
@@ -298,6 +299,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .your-order__div--content {
@@ -671,8 +673,12 @@ input[type="radio"]:checked + label {
 
   /*______________________________order-success__________________________*/
 
-
-  .order-success__section{max-width: 400px;
+.your-order__main{
+  min-height: 192vh;
+}
+  .order-success__section{
+    
+    max-width: 400px;
   margin: auto;
   border-left: 10px var(--button--orange) solid;
 
@@ -697,6 +703,7 @@ position: relative;
   position: absolute;
   top: 108px;
   right: 0;
+  z-index: -1;
 }
 
 
@@ -742,15 +749,15 @@ position: relative;
 
 .order-success__h1{
   grid-column: 2/3;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .order-success__div--text{
-  grid-column: 2/4;
-  grid-row: 2/3;
-  font-size: 0.9rem;
-  max-width: 551px;
-    margin-left: auto;
+  grid-column: 1/4;
+    grid-row: 2/3;
+    font-size: 0.9rem;
+    max-width: none;
+    margin-left: 26%;
   
 }
 
@@ -773,6 +780,7 @@ min-width: 41vh;
 .order-success__div--buttons{
   display: inline-block;
   grid-column: 2/4;
+  
 }
 
 /* _______________________About________________________ */
