@@ -163,7 +163,7 @@ h1 {
 
 
 .homepage__section--third {
-  background: url(../Backgrounds/gage-walker-6LT0b6LmCt4-unsplash-bg1.jpg)
+  background: url(../Backgrounds/gage-walker-6LT0b6LmCt4-unsplash-bg2.jpg)
     center;
   background-size: cover;
   min-height: 66vh;
@@ -734,6 +734,45 @@ position: relative;
 .order-success__section{
   background: none;
   border-left: none;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  max-width: none;
+}
+
+.order-success__h1{
+  grid-column: 2/3;
+  font-size: 3rem;
+}
+
+.order-success__div--text{
+  grid-column: 2/4;
+  grid-row: 2/3;
+  font-size: 0.9rem;
+  max-width: 551px;
+    margin-left: auto;
+  
+}
+
+.order-success__div--buttons{
+  grid-column: 1/2;
+  grid-row:3;
+}
+
+.order-success__image{
+min-width: 41vh;
+}
+
+.order-success__div--image{
+  margin: 68px auto;
+    grid-row: 1/4;
+    grid-column: 4/5;
+    max-width: 100%;
+}
+
+.order-success__div--buttons{
+  display: inline-block;
+  grid-column: 2/4;
 }
 
 /* _______________________About________________________ */
