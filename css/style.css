@@ -781,7 +781,7 @@ position: relative;
 }
 
 .order-success__image{
-min-width: 41vh;
+min-width: 35vh;
 }
 
 .order-success__div--image{
@@ -797,9 +797,10 @@ min-width: 41vh;
   
 }
 
-.order-success__section::after{
+.order-success__section::after
+/*.product-specific__section/*/{
   content: "";
-  background-color: grey;
+  background-color:var(--background--light-grey);
   padding: 25% 53% 11% 20%;
   clip-path: ellipse(78% 56% at 96% 88%);
   z-index: -2;
