@@ -207,7 +207,7 @@ h1 {
 		no-repeat center;
 	background-size: cover;
 	color: var(--heading-white);
-	margin-bottom: 40px;
+	
 }
 .contact__section--contact-info {
 	display: flex;
@@ -235,7 +235,8 @@ h1 {
 }
 
 .contact__section--h2-and-form {
-	margin: 200px 0 0 auto;
+	margin: 200px 0 40px auto;
+  
 }
 
 fieldset {
@@ -643,10 +644,7 @@ input[type="radio"]:checked + label {
 	/* ------------------prouct-specific----------------  */
 	/*_____________________________________Product-specific______________        */
 
-	.product-specific__section {
-		position: absolute;
-	}
-
+	
 	.product-specific__div {
 		z-index: 1000;
 		display: flex;
@@ -667,6 +665,9 @@ input[type="radio"]:checked + label {
 		max-width: 400px;
 		margin: auto;
 		border-left: 10px var(--button--orange) solid;
+    position: relative;
+    right: 26%;
+}
 
 		/*__________________________Checkout&&__your-order____________________________________*/
 	}
@@ -686,11 +687,15 @@ input[type="radio"]:checked + label {
 		border-top: 400px solid transparent;
 		border-bottom: 400px solid transparent;
 		float: right;
-		position: absolute;
+		
 		top: 108px;
 		right: 0;
 		z-index: -1;
 	}
+
+  .checkout__main::after{
+    position: absolute;
+  }
 
 	.checkout__main::before,
 	.your-order__main::before,
@@ -798,6 +803,11 @@ input[type="radio"]:checked + label {
   bottom: 0;
   left: 27%;
   height: 135vh;
+}
+
+.product-specific__section{
+    right: 20%;
+    bottom: 0%;
 }
 	/* _______________________About________________________ */
 
