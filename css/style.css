@@ -675,7 +675,7 @@ input[type="radio"]:checked + label {
   /*______________________________order-success__________________________*/
 
 .your-order__main{
-  min-height: 192vh;
+  min-height: 100vh;
 }
   .order-success__section{
     
@@ -793,8 +793,21 @@ min-width: 41vh;
 
 .order-success__div--buttons{
   display: inline-block;
-  grid-column: 2/4;
+  grid-column: 2/5;
   
+}
+
+.order-success__section::after{
+  content: "";
+  background-color: grey;
+  padding: 25% 53% 11% 20%;
+  clip-path: ellipse(78% 56% at 96% 88%);
+  z-index: -2;
+  display: inline;
+  position: absolute;
+  left: 27%;
+  height: 140%;
+  bottom: -7%;
 }
 
 
