@@ -787,7 +787,7 @@ input[type="radio"]:checked + label {
 	position: absolute;
 	left: 27%;
 	height: 140%;
-	bottom: -7%;
+	bottom: 0;
 }
 
 .product-specific__main::after {
