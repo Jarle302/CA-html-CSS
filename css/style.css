@@ -746,7 +746,20 @@ position: relative;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(3,1fr);
   max-width: none;
+ 
 }
+
+.order-success__h1,
+.order-success__div--text{
+  text-align: start;
+  
+}
+
+.order-success__h1,
+.order-success__div--buttons{
+  padding:0 20px;
+}
+
 
 .order-success__h1{
   grid-column: 2/3;
@@ -754,11 +767,11 @@ position: relative;
 }
 
 .order-success__div--text{
-  grid-column: 1/4;
+  grid-column: 2/3;
     grid-row: 2/3;
     font-size: 0.9rem;
-    max-width: none;
-    margin-left: 26%;
+    max-width: 308px;
+   
   
 }
 
