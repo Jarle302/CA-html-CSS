@@ -128,7 +128,7 @@ h1 {
 
 /*Homepage*/
 .homepage__section--first {
-	background: url(../backgrounds/johannes-andersson-IqBsJY-buKo-unsplash-bg1.jpg)
+	background: url(../backgrounds/johannes-andersson-IqBsJY-buKo-unsplash-big.jpg)
 		no-repeat;
 	background-size: cover;
 	min-height: 67vh;
@@ -548,15 +548,15 @@ input[type="radio"]:checked + label {
 		gap: 45px;
 	}
 
-	*/
+	
 
 	/*  ________________________________HOMEPAGE_______________________________________ */
 
 	.homepage__section--first{
-		min-height: 150vh;
+		min-height: 200vh;
 	}
 
-	.homepage__section--first::before {
+	.homepage__section--first::before{
 		content: "";
 		background: url(/images/RainyDays_Logo.png) no-repeat;
 		padding: 40px;
