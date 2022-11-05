@@ -693,7 +693,8 @@ input[type="radio"]:checked + label {
 	}
 
 	.checkout__main::before,
-	.your-order__main::before {
+	.your-order__main::before,
+  .product-specific__main::before {
 		content: "";
 		background: url(/images/RainyDays_Logo.png) no-repeat;
 		padding: 40px;
@@ -756,7 +757,7 @@ input[type="radio"]:checked + label {
 	}
 
 	.order-success__image {
-		min-width: 35vh;
+		min-width: 24vh;
 	}
 
 	.order-success__div--image {
@@ -772,7 +773,7 @@ input[type="radio"]:checked + label {
 	}
 
 	.order-success__section::after
-/*.product-specific__section/*/ {
+ {
 		content: "";
 		background-color: var(--background--light-grey);
 		padding: 25% 53% 11% 20%;
@@ -785,6 +786,19 @@ input[type="radio"]:checked + label {
 		bottom: -7%;
 	}
 
+
+.product-specific__main::after{ 
+  content: "";
+  background-color: var(--background--light-grey);
+  padding: 25% 53% 11% 20%;
+  clip-path: ellipse(80% 38% at 121% 76%);
+  z-index: -2;
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  left: 27%;
+  height: 135vh;
+}
 	/* _______________________About________________________ */
 
 	.about__h1 {
