@@ -207,7 +207,6 @@ h1 {
 		no-repeat center;
 	background-size: cover;
 	color: var(--heading-white);
-	
 }
 .contact__section--contact-info {
 	display: flex;
@@ -236,7 +235,6 @@ h1 {
 
 .contact__section--h2-and-form {
 	margin: 200px 0 40px auto;
-  
 }
 
 fieldset {
@@ -431,6 +429,7 @@ input[type="radio"]:checked + label {
 .product-specific__section {
 	position: relative;
 	margin-bottom: 40px;
+  
 }
 
 .product-specific__h1 {
@@ -548,9 +547,7 @@ input[type="radio"]:checked + label {
 		gap: 45px;
 	}
 
-
-
-*/
+	*/
 
 	/*  ________________________________HOMEPAGE_______________________________________ */
 
@@ -644,7 +641,6 @@ input[type="radio"]:checked + label {
 	/* ------------------prouct-specific----------------  */
 	/*_____________________________________Product-specific______________        */
 
-	
 	.product-specific__div {
 		z-index: 1000;
 		display: flex;
@@ -665,153 +661,155 @@ input[type="radio"]:checked + label {
 		max-width: 400px;
 		margin: auto;
 		border-left: 10px var(--button--orange) solid;
-    position: relative;
-    right: 26%;
-}
-
-		/*__________________________Checkout&&__your-order____________________________________*/
-	}
-
-	.checkout__section {
-		border-left: 10px solid var(--button--orange);
-		right: 23%;
 		position: relative;
+		right: 26%;
 	}
 
-	.checkout__main::after,
-	.your-order__main::after {
-		content: "";
-		height: 0;
-		width: 0;
-		border-right: 400px solid var(--background--light-grey);
-		border-top: 400px solid transparent;
-		border-bottom: 400px solid transparent;
-		float: right;
-		
-		top: 108px;
-		right: 0;
-		z-index: -1;
-	}
-
-  .checkout__main::after{
-    position: absolute;
-  }
-
-	.checkout__main::before,
-	.your-order__main::before,
-  .product-specific__main::before {
-		content: "";
-		background: url(/images/RainyDays_Logo.png) no-repeat;
-		padding: 40px;
-		background-size: contain;
-		min-height: 60px;
-		width: 200px;
-		position: absolute;
-		right: 0;
-		top: 422px;
-		z-index: 2000;
-	}
-	.your-order__main::before {
-		top: 377px;
-	}
-
-	.your-order__main::after {
-		top: 58px;
-	}
-
-	.your-order__section {
-		position: absolute;
-	}
-
-	/*________________Order--success_______________________*/
-
-	.order-success__section {
-		background: none;
-		border-left: none;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(3, 1fr);
-		max-width: none;
-	}
-
-	.order-success__h1,
-	.order-success__div--text {
-		text-align: start;
-	}
-
-	.order-success__h1,
-	.order-success__div--buttons {
-		padding: 0 20px;
-	}
-
-	.order-success__h1 {
-		grid-column: 2/3;
-		font-size: 4rem;
-	}
-
-	.order-success__div--text {
-		grid-column: 2/3;
-		grid-row: 2/3;
-		font-size: 0.9rem;
-		max-width: 308px;
-	}
-
-	.order-success__div--buttons {
-		grid-column: 1/2;
-		grid-row: 3;
-	}
-
-	.order-success__image {
-		min-width: 24vh;
-	}
-
-	.order-success__div--image {
-		margin: 68px auto;
-		grid-row: 1/4;
-		grid-column: 4/5;
-		max-width: 100%;
-	}
-
-	.order-success__div--buttons {
-		display: inline-block;
-		grid-column: 2/5;
-	}
-
-	.order-success__section::after
- {
-		content: "";
-		background-color: var(--background--light-grey);
-		padding: 25% 53% 11% 20%;
-		clip-path: ellipse(78% 56% at 96% 88%);
-		z-index: -2;
-		display: inline;
-		position: absolute;
-		left: 27%;
-		height: 140%;
-		bottom: -7%;
-	}
+	/*__________________________Checkout&&__your-order____________________________________*/
 
 
-.product-specific__main::after{ 
-  content: "";
-  background-color: var(--background--light-grey);
-  padding: 25% 53% 11% 20%;
-  clip-path: ellipse(80% 38% at 121% 76%);
-  z-index: -2;
-  display: inline;
-  position: absolute;
-  bottom: 0;
-  left: 27%;
-  height: 135vh;
+.checkout__section {
+	border-left: 10px solid var(--button--orange);
+	right: 23%;
+	position: relative;
 }
 
-.product-specific__section{
-    right: 20%;
-    bottom: 0%;
-}
-	/* _______________________About________________________ */
+.checkout__main::after,
+.your-order__main::after {
+	content: "";
+	height: 0;
+	width: 0;
+	border-right: 400px solid var(--background--light-grey);
+	border-top: 400px solid transparent;
+	border-bottom: 400px solid transparent;
+	float: right;
 
-	.about__h1 {
-		margin-top: 37%;
-	}
+	top: 108px;
+	right: 0;
+	z-index: -1;
+}
+
+.checkout__main::after {
+	position: absolute;
+}
+
+.checkout__main::before,
+.your-order__main::before,
+.product-specific__main::before {
+	content: "";
+	background: url(/images/RainyDays_Logo.png) no-repeat;
+	padding: 40px;
+	background-size: contain;
+	min-height: 60px;
+	width: 200px;
+	position: absolute;
+	right: 0;
+	top: 422px;
+	z-index: 2000;
+}
+.your-order__main::before {
+	top: 377px;
+}
+
+.your-order__main::after {
+	top: 58px;
+}
+
+.your-order__section {
+	position: absolute;
+}
+
+/*________________Order--success_______________________*/
+
+.order-success__section {
+	background: none;
+	border-left: none;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	max-width: none;
+  position: relative;
+  left: 0;
+}
+
+
+.order-success__h1,
+.order-success__div--text {
+	text-align: start;
+}
+
+.order-success__h1,
+.order-success__div--buttons {
+	padding: 0 20px;
+}
+
+.order-success__h1 {
+	grid-column: 2/3;
+	font-size: 4rem;
+}
+
+.order-success__div--text {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	font-size: 0.9rem;
+	max-width: 308px;
+}
+
+.order-success__div--buttons {
+	grid-column: 1/2;
+	grid-row: 3;
+}
+
+.order-success__image {
+	min-width: 24vh;
+}
+
+.order-success__div--image {
+	margin: 68px auto;
+	grid-row: 1/4;
+	grid-column: 4/5;
+	max-width: 100%;
+}
+
+.order-success__div--buttons {
+	display: inline-block;
+	grid-column: 2/5;
+}
+
+.order-success__section::after {
+	content: "";
+	background-color: var(--background--light-grey);
+	padding: 25% 53% 11% 20%;
+	clip-path: ellipse(78% 56% at 96% 88%);
+	z-index: -2;
+	display: inline;
+	position: absolute;
+	left: 27%;
+	height: 140%;
+	bottom: -7%;
+}
+
+.product-specific__main::after {
+	content: "";
+	background-color: var(--background--light-grey);
+	padding: 25% 53% 11% 20%;
+	clip-path: ellipse(80% 38% at 121% 76%);
+	z-index: -2;
+	position: absolute;
+	bottom: 0;
+	left: 27%;
+	height: 135vh;
+}
+
+.product-specific__section {
+	right: 20%;
+	bottom: 0%;
+}
+/* _______________________About________________________ */
+
+.about__h1 {
+	margin-top: 37%;
+}
+
+
 }
