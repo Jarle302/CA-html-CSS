@@ -437,7 +437,7 @@ input[type="radio"]:checked + label {
 }
 
 .product-specific__div {
-	position: absolute;
+	position: relative;
 	z-index: 1000;
 	right: 0;
 	top: 40px;
@@ -446,6 +446,7 @@ input[type="radio"]:checked + label {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+  margin-bottom: 80px;
 }
 
 .product-specific__img {
