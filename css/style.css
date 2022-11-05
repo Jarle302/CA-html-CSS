@@ -637,6 +637,15 @@ input[type="radio"]:checked + label {
     
   }
 
+
+
+
+
+
+
+
+
+
   /*____________________________________contact_______________________________________ */
 
 
@@ -657,19 +666,24 @@ input[type="radio"]:checked + label {
 	margin-bottom: 20px;
   }
 
-  /* ------------------Your order----------------  */
+  /* ------------------prouct-specific----------------  */
+/*_____________________________________Product-specific______________        */
 
+.product-specific__section{
+  position: absolute;
+
+}
+
+}
   .product-specific__div {
     z-index: 1000;
-    background-color: var(--background--light-grey);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin:  auto;
     position: static;
 	max-width:400px;
-	border-radius: 12px;
-	border-left: 11px solid var(--button--orange);
+  background: none;
   }
 
   /*______________________________order-success__________________________*/
