@@ -793,14 +793,13 @@ input[type="radio"]:checked + label {
 .product-specific__main::after {
 	content: "";
     background-color: var(--background--light-grey);
-    padding: 172% 53% 20% 20%;
+    padding: 172% 53% 0% 20%;
     clip-path: ellipse(80% 38% at 121% 76%);
     z-index: -2;
     position: relative;
     bottom: -300px;
     left: 27%;
-    
-    bottom: 113px;
+    bottom: 0;
 }
 
 .product-specific__section {
