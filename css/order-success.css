@@ -1,0 +1,130 @@
+
+
+.order-success__section {
+	background-color: var(--background-grey);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.order-success__h1 {
+	color: var(--success-green);
+	margin-top: 72px;
+	font-size: 3rem;
+}
+
+.order-success__h2 {
+	text-align: start;
+	padding: 0 0 0 20px;
+	margin-bottom: 2px;
+}
+
+.order-success__p {
+	padding: 0 20px;
+	margin: 0;
+}
+
+.order-success__div--text {
+	max-width: 421px;
+}
+
+.order-success__div--buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 46px;
+	gap: 10px;
+}
+
+.order-success__btn--home {
+	background-color: var(--background--light-grey);
+}
+
+.order-success__btn--continue-shopping,
+.order-success__btn--home {
+	color: var(--small-text--black);
+}
+
+.order-success__div--image {
+	margin: 68px auto;
+}
+
+@media screen and (min-width: 650px) {
+
+    .order-success__section {
+		max-width: 400px;
+		margin: auto;
+		border-left: 10px var(--button--orange) solid;
+		position: relative;
+		right: 26%;
+	}
+
+    .order-success__section {
+        background: none;
+        border-left: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: none;
+      position: relative;
+      left: 0;
+    }
+    
+    
+    .order-success__h1,
+    .order-success__div--text {
+        text-align: start;
+    }
+    
+    .order-success__h1,
+    .order-success__div--buttons {
+        padding: 0 20px;
+    }
+    
+    .order-success__h1 {
+        grid-column: 2/3;
+        font-size: 4rem;
+    }
+    
+    .order-success__div--text {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 0.9rem;
+        max-width: 308px;
+    }
+    
+    .order-success__div--buttons {
+        grid-column: 1/2;
+        grid-row: 3;
+    }
+    
+    .order-success__image {
+        min-width: 24vh;
+    }
+    
+    .order-success__div--image {
+        margin: 68px auto;
+        grid-row: 1/4;
+        grid-column: 4/5;
+        max-width: 100%;
+    }
+    
+    .order-success__div--buttons {
+        display: inline-block;
+        grid-column: 2/5;
+    }
+    
+    .order-success__section::after {
+        content: "";
+        background-color: var(--background--light-grey);
+        padding: 25% 53% 11% 20%;
+        clip-path: ellipse(78% 56% at 96% 88%);
+        z-index: -2;
+        display: inline;
+        position: absolute;
+        left: 27%;
+        height: 140%;
+        bottom: 0;
+    }
+}

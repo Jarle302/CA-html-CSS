@@ -1,0 +1,84 @@
+/*Contact */
+
+.contact__main {
+	background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized2.jpg)
+		no-repeat center;
+	background-size: cover;
+	color: var(--heading-white);
+	display: flex;
+    justify-content: end;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.contact__section--contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.contact__div--email-us,
+.contact__div--visit-us,
+.contact__div--call-us {
+	background-color: var(--blue);
+	padding: 21px;
+	border-radius: 53px 0px 0px 53px;
+	margin: 0;
+}
+
+.contact__div--visit-us {
+	background-color: var(--button--orange);
+}
+
+.contact__section--h2-and-form{
+    margin: 20px;
+}
+
+.form--contact {
+	display: flex;
+	flex-direction: column;
+	color: var(--heading-dark);
+}
+
+
+
+fieldset {
+	border: solid orange 1px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__form__button {
+	align-self: center;
+	margin-top: -16px;
+}
+
+.form--container {
+	border: 1px solid var(--button--orange);
+	background-color: var(--background-grey);
+	clear: both;
+	box-shadow: 2px 2px 14px black;
+}
+
+.form--container input {
+	padding: 11px 0;
+}
+
+@media screen and (min-width: 650px) {
+
+    .form--contact {
+		margin: 0;
+	}
+
+	
+
+	.contact__section--h2-and-form {
+		max-width: 45%;
+	}
+
+	.contact__form__button {
+		margin-bottom: 20px;
+	}
+}
