@@ -32,6 +32,12 @@ a {
 	color: white;
 }
 
+fieldset {
+	border: solid orange 1px;
+	display: flex;
+	flex-direction: column;
+}
+
 
 
 /* Headings  */
