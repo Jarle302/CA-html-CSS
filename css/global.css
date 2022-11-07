@@ -78,6 +78,8 @@ h1 {
 	padding: 10px;
 }
 
+@media screen and (min-width:650px) {
+	
 
 .checkout__main::after,
 .your-order__main::after {
@@ -112,3 +114,4 @@ h1 {
 }
 
 
+}

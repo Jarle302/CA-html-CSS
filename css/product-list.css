@@ -59,6 +59,23 @@
 }
 
 @media screen and (min-width: 650px) {
+    .product-list__section {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.product-list__h1--our-jackets {
+		background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg)
+			no-repeat center;
+		background-size: cover;
+		grid-column: 1/4;
+		grid-row: 1/2;
+	}
+
+
+}
+
+@media screen and (min-width: 833px) {
 
     .product-list__section {
 		grid-template-columns: repeat(4, 1fr);

@@ -5,6 +5,7 @@ header {
 	justify-content: space-between;
     position: fixed;
     width: 100%;
+    z-index: 2500;
 }
 
 header,
@@ -14,7 +15,7 @@ footer {
 }
 
 .header__img--logo {
-	width: 58px;
+	width: 75px;
 }
 
 nav {
