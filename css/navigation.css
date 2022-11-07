@@ -3,6 +3,8 @@
 header {
 	display: flex;
 	justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
 header,
@@ -19,7 +21,7 @@ nav {
 	padding: 8vh 3vh;
 	background: var(--background-grey);
 	right: 0;
-	position: fixed;
+	
 	top: 0px;
 }
 #hamburger-menu {

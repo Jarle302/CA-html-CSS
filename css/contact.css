@@ -8,8 +8,9 @@
 	display: flex;
     justify-content: end;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
+    
 }
 
 
@@ -44,11 +45,6 @@
 
 
 
-fieldset {
-	border: solid orange 1px;
-	display: flex;
-	flex-direction: column;
-}
 
 .contact__form__button {
 	align-self: center;
