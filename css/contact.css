@@ -4,7 +4,7 @@
 	background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized2.jpg)
 		no-repeat center;
 	background-size: cover;
-	color: var(--heading-white);
+	color: var(--heading-black);
 	display: flex;
     justify-content: end;
     flex-direction: column;
