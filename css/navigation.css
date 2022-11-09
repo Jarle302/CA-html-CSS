@@ -22,7 +22,7 @@ nav {
 	padding: 8vh 3vh;
 	background: var(--background-grey);
 	right: 0;
-	
+	position: absolute;
 	top: 0px;
 }
 #hamburger-menu {
@@ -51,15 +51,17 @@ nav ul {
 nav li {
 	padding: 13px;
 	border-radius: 12px;
+	
 }
 
 .nav__li--active {
 	background-color: var(--button--orange);
 }
 
-.nav__li--active a {
+nav a{
 	color: var(--small-text--black);
 }
+
 
 @media screen and (min-width: 650px) {
     
@@ -79,8 +81,15 @@ nav li {
 
 	nav li {
 		display: inline-block;
-		color: var(--small-text--black);
+		
 	}
+nav a{
+	color: var(--heading-white);
+}
+
+.nav__li--active a{
+	color: var(--small-text--black);
+}
 
 	nav ul {
 		display: flex;
