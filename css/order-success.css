@@ -53,29 +53,18 @@
 @media screen and (min-width: 650px) {
 
     .order-success__section {
-		max-width: 400px;
 		margin: auto;
-		border-left: 10px var(--button--orange) solid;
 		position: relative;
-		right: 26%;
-	}
-
-    .order-success__section {
         background: none;
-        border-left: none;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
         max-width: none;
-      position: relative;
       left: 0;
     }
     
     
-    .order-success__h1,
-    .order-success__div--text {
-        text-align: start;
-    }
+
     
     .order-success__h1,
     .order-success__div--buttons {
