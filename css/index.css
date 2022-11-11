@@ -13,13 +13,15 @@
 
 .homepage__h1 {
 	color: var(--heading-white);
-	text-shadow: 0px 0px 6px white;
+	text-shadow: 0px 0px 6px rgb(0, 0, 0);
+	background-color: rgb(0 0 0 / 19%);
 }
 
 .homepage__button {
 	align-self: center;
 	 margin-bottom: 40px;
-	 transform: translate(0%,-143%);	
+	 position: absolute;
+	 top: 74%;	
 }
 
 
@@ -51,12 +53,6 @@
 
 @media screen and (min-width: 650px) {
    
-	.homepage__button {
-	
-		padding: 30px 50px;
-		font-size: 1rem;
-
-	}
 
 	.homepage__ul--selling-points {
 
