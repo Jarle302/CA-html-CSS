@@ -3,11 +3,7 @@
 .product-list__main {
 	background-color: var(--background-grey);
 }
-.logo__div--product-list {
-	display: flex;
-	justify-content: center;
-	padding: 68px 30px 30px 30px;
-}
+
 
 .product-list__section {
 	display: grid;
@@ -65,9 +61,6 @@
 	}
 
 	.product-list__h1--our-jackets {
-		background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg)
-			no-repeat center;
-		background-size: cover;
 		grid-column: 1/4;
 		grid-row: 1/2;
 	}
@@ -83,9 +76,6 @@
 	}
 
 	.product-list__h1--our-jackets {
-		background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg)
-			no-repeat center;
-		background-size: cover;
 		grid-column: 1/5;
 		grid-row: 1/2;
 	}
