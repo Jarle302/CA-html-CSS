@@ -41,3 +41,11 @@
 		max-width: 67%;
 	}
 }
+
+
+@media screen and (orientation: landscape) and (max-width: 400px) {
+    .about__div--wrapper{position: static;
+    margin: top;
+    margin-top: 168px;
+	}
+}
