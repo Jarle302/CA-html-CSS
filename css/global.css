@@ -75,7 +75,8 @@ h1 {
 
 .back-arrow {
 	color: #000000;
-	align-self: flex-start;
 	padding: 10px;
+	position: fixed;
+    top: 11%;
 }
 
