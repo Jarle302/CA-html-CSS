@@ -29,7 +29,7 @@ None
 ## Contact:
 Made navbar consistent with the other pages
 
-Fixed heading contrast by adding  background-color
+Fixed heading contrast by adding background-color
 
 fully saturate background image 
 
@@ -42,10 +42,18 @@ Minor changes to the text
 added select to decide jacket size
 
 ## Checkout:
-none/minor changes
+none/minor changes. Note in my figma file the mobile and desktop version are different from eachother, this was an oversight when i was making the design and the styling on the mobile one is what i intended to have on both of them. 
 
 ## order_success
 none/minor changes
+
+
+## References
+All images from unsplash.com 
+
+All icons from https://fontawesome.com/
+
+
 
 
 
@@ -55,6 +63,10 @@ Link to my site:
 
 https://lighthearted-sundae-2313cf.netlify.app/index.html?fbclid=IwAR0MfX4I3qYvNEgBEo5AeIQZHwpmKaYY3oC_KPtD2XDdKmgHjCFigP9KlKM
 
+
+link to the design: 
+
+https://www.figma.com/file/hkeCgf7L3GHZFEPrZIAF2D/2022-09-24_Design1_ca_Jarle-Tollaksen_fp?version-id=2507593624&node-id=0%3A1
 
 ## Authors
 
