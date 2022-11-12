@@ -9,17 +9,23 @@
 
 .your-order__h1{
 	position: relative;
-    top: 26px;
+    top: 45px;
 }
 
 .your-order__div--content {
 	border-radius: 40px;
 	padding: 28px 20px;
+	background-color:var(--background--light-grey);
+	margin-left:2%;
 }
 
 .your-order__div--image {
 	max-width: 60%;
 	margin: auto;
+}
+
+.btn--your-order{
+	margin-top:-27px;
 }
 
 table {
