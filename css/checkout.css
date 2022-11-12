@@ -46,7 +46,7 @@ input[type="radio"]:checked + label {
 	border: 2px solid var(--success-green);
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1000px) {
     .checkout__section {
         border-left: 10px solid var(--button--orange);
         right: 23%;
