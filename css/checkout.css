@@ -55,5 +55,29 @@ input[type="radio"]:checked + label {
     
     .checkout__main::after {
         position: absolute;
-    }
+	content: "";
+	height: 0;
+	width: 0;
+	border-right: 400px solid var(--background--light-grey);
+	border-top: 400px solid transparent;
+	border-bottom: 400px solid transparent;
+	float: right;
+
+	top: 108px;
+	right: 0;
+	z-index: -1;
+}
+
+	.checkout__main::before{
+	content: "";
+	background: url(/images/RainyDays_Logo.png) no-repeat;
+	padding: 40px;
+	background-size: contain;
+	min-height: 60px;
+	width: 200px;
+	position: absolute;
+	right: 0;
+	top: 422px;
+	z-index: 2000;
+}
 }    

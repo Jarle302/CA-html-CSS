@@ -66,6 +66,21 @@
         left: 27%;
         bottom: 0;
     }
+
+
+.product-specific__main::before {
+	content: "";
+	background: url(/images/RainyDays_Logo.png) no-repeat;
+	padding: 40px;
+	background-size: contain;
+	min-height: 60px;
+	width: 200px;
+	position: absolute;
+	right: 0;
+	top: 289px;
+	z-index: 2000;
+	margin-right:4%;
+}
     
     .product-specific__section {
         right: 20%;

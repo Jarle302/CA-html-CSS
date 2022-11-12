@@ -35,16 +35,39 @@ td {
     .your-order__main {
 		min-height: 100vh;
 	}
-    .your-order__main::before {
-        top: 377px;
-    }
+  
     
-    .your-order__main::after {
-        top: 58px;
-    }
+    
     
     .your-order__section {
         position: absolute;
     }
+
+.your-order__main::before {
+	content: "";
+	background: url(/images/RainyDays_Logo.png) no-repeat;
+	padding: 40px;
+	background-size: contain;
+	min-height: 60px;
+	width: 200px;
+	position: absolute;
+	right: 0;
+	top: 317px;
+	z-index: 2000;
+}
+
+.your-order__main::after {
+	content: "";
+	height: 0;
+	width: 0;
+	border-right: 400px solid var(--background--light-grey);
+	border-top: 400px solid transparent;
+	border-bottom: 400px solid transparent;
+	float: right;
+
+	top: 58px;
+	right: 0;
+	z-index: -1;
+}
     
 }
