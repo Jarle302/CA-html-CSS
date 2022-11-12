@@ -33,6 +33,12 @@
 	margin-bottom: 20px;
 }
 
+.checkout__div--second-background{
+	background-color: var(--background-grey);
+    width: 113%;
+    transform: translate(-6%, 10px);
+}
+
 .checkout__form__input--radio {
 	display: none;
 }
