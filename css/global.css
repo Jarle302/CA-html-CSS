@@ -78,5 +78,6 @@ h1 {
 	padding: 10px;
 	position: fixed;
     top: 11%;
+	z-index: 3000;
 }
 

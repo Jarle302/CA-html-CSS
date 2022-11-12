@@ -14,12 +14,14 @@
 	z-index: 1000;
 	right: 0;
 	top: 40px;
-	background-color: var(--background--light-grey);
-	border-radius: 55px 0 0 55px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
   margin-bottom: 80px;
+  background-color: var(--background--light-grey);
+    max-width: 400px;
+    border-radius: 108px 0px 0px 108px;
+    float: right;
 }
 
 .product-specific__img {
@@ -43,6 +45,8 @@
 }
 
 
+
+
 @media screen and (min-width: 650px) {
 
     .product-specific__div {
@@ -53,7 +57,8 @@
 		margin: auto;
 		position: static;
 		max-width: 400px;
-		background: none;
+		background:none;
+		float: none;
 	}
     .product-specific__main::after {
         content: "";
