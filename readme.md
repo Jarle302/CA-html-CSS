@@ -17,10 +17,24 @@ I've also struggled to make the text readable, by having it white it got flagged
 ## product-list
 Removed the logo which was at top left corner. 
 
-Changed some product names
+Changed some product names 
+
+Made navbar the same as on the other pages.(Had a white background color in my design)
 
 ## About
 None
+
+## Contact
+Made navbar consistent with the other pages
+
+Fixed heading contrast by adding  background-color
+
+fully saturate background image 
+
+
+
+## Your order
+Changed the design abit by
 
 
 

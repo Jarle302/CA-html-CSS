@@ -43,3 +43,9 @@
 }
 
 
+@media screen and (orientation: landscape) and (max-height: 477px) {
+    .about__div--wrapper{position: static;
+    margin: top;
+    margin-top: 168px;
+	}
+}
