@@ -43,7 +43,7 @@
 }
 
 
-@media screen and (orientation: landscape) and (max-width: 400px) {
+@media screen and (orientation: landscape) and (max-width: 600px) {
     .about__div--wrapper{position: static;
     margin: top;
     margin-top: 168px;
