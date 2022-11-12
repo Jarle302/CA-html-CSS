@@ -14,17 +14,19 @@ He also pointed out that it was unnecessary having the logo on the homepage when
 
 I've also struggled to make the text readable, by having it white it got flagged by wave for having to low contrast, which got fixed by changing in to black, but then it was plain to the naked eye that the text was hard to read. My solution ended up being to have a low opacity backgroundcolor which was enough to give it the needed contrast. On the unordered list i added a orange border which combined with the background color added some style to the change.
 
-## product-list
+
+Product-list:
+
 Removed the logo which was at top left corner. 
 
 Changed some product names 
 
 Made navbar the same as on the other pages.(Had a white background color in my design)
 
-## About
+About:
 None
 
-## Contact
+Contact:
 Made navbar consistent with the other pages
 
 Fixed heading contrast by adding  background-color
@@ -33,14 +35,14 @@ fully saturate background image
 
 
 
-## Your order
+Your order:
 Minor changes to the text
 
-## Order-specific
+Order-specific:
 added select to decide jacket size
 
-## Checkout
-made some changes to colors and background-colors on form.
+Checkout:
+minor changes
 
 
 
