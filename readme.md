@@ -34,7 +34,14 @@ fully saturate background image
 
 
 ## Your order
-Changed the design abit by
+Minor changes to the text
+
+## Order-specific
+added select to decide jacket size
+
+## Checkout
+made some changes to colors and background-colors on form.
+
 
 
 
