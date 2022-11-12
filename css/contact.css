@@ -1,9 +1,9 @@
 
 .contact__main {
-	background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-resized2.jpg)
+	background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-contact3.jpg)
 		no-repeat center;
 	background-size: cover;
-	color: var(--heading-black);
+	color: var(--heading-white);
 	display: flex;
     justify-content: end;
     flex-direction: column;
@@ -12,12 +12,21 @@
     
 }
 
+h1,
+h2{
+	text-shadow:0px 0px 6px rgb(0, 0, 0) ;
+	background-color: rgb(0 0 0 / 19%);
+}
 
 .contact__section--contact-info {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
     margin-top: 35px;
+}
+
+.contact__section--contact-info p{
+	color:var(--small-text--black);
 }
 
 .contact__div--email-us,
