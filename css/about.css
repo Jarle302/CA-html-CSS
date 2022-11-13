@@ -16,6 +16,7 @@
 	margin-top: 200px;
 	color: var(--heading-white);
 	text-shadow: 0px 0px 6px black;
+	background-color: rgba(0, 0, 0, 0.178);
 }
 
 @media screen and (min-width: 650px) {
@@ -29,6 +30,7 @@
         margin: 0 0 0 5%;
 		font-size: 4rem;
 		text-align: start;
+		max-width: fit-content;
     }
 
 	.about__main{
