@@ -8,7 +8,7 @@ This is my html and css CA. I chose the Rainy Days project.
 
 #### Homepage:
 
-I was reccomended by Micheal John Phillip in my teacher review to make the site not so vertically long, by only using one background image instead of two(i had three on mobile aswell). I followed his advice, and made the changed he suggested in the video. A consquence of this is that i had to remove some headings aswell.
+I was reccomended by Micheal John Phillip in my teacher review to make the site not so vertically long, by only using one background image instead of two(i had three on mobile aswell). I followed his advice, and made the changes he suggested in the video. A consquence of this is that i had to remove some headings aswell.
 
 He also pointed out that it was unnecessary having the logo on the homepage when it's a part of the header, so i removed that. 
 
@@ -50,6 +50,7 @@ none/minor changes
 All images from unsplash.com 
 Vipps icon from https://iconify.design/
 All other icons from https://fontawesome.com/ 
+
 
 
 
