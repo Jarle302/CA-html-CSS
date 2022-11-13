@@ -12,7 +12,9 @@ I was reccomended by Micheal John Phillip in my teacher review to make the site 
 
 He also pointed out that it was unnecessary having the logo on the homepage when it's a part of the header, so i removed that. 
 
-I've also struggled to make the text readable, by having it white it got flagged by wave for having to low contrast, which got fixed by changing in to black, but then it was plain to the naked eye that the text was hard to read. My solution ended up being to have a low opacity backgroundcolor which was enough to give it the needed contrast. On the unordered list i added a orange border which combined with the background color added some style to the change.
+I've also struggled to make the text readable, by having it white it got flagged by wave for having to low contrast, which got fixed by changing in to black, but then it was plain to the naked eye that the text was hard to read. My solution ended up being to have a low opacity backgroundcolor which was enough to give it the needed contrast. This was a problem on many of my pages. In the end i reasoned that staying WCAG compliant was more important than pure aesthetics, but a better solution is something i want to find/learn in the future.  
+
+On the unordered list i added a orange border which combined with the background color added some style to the change.
 
 
 #### Product-list:
@@ -24,7 +26,7 @@ Changed some product names
 Made navbar the same as on the other pages.(Had a white background color in my design)
 
 #### About:
-None
+Added background-color to heading
 
 #### Contact:
 Made navbar consistent with the other pages
