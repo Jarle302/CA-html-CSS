@@ -14,6 +14,12 @@ footer {
 	background-color: var(--header-footer);
 }
 
+footer{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header__img--logo {
 	width: 75px;
 }
