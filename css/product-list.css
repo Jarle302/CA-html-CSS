@@ -28,6 +28,10 @@
   padding-top: 15px;
 }
 
+.product-list__card:hover{
+  box-shadow: 1px 1px 1px black;
+}
+
 .product-list__card img {
   max-height: 179px;
   width: auto;
