@@ -74,7 +74,7 @@ https://lighthearted-sundae-2313cf.netlify.app/index.html?fbclid=IwAR0MfX4I3qYvN
 
 link to the design: 
 
-https://www.figma.com/file/hkeCgf7L3GHZFEPrZIAF2D/2022-09-24_Design1_ca_Jarle-Tollaksen_fp?version-id=2507593624&node-id=0%3A1
+https://www.figma.com/file/hkeCgf7L3GHZFEPrZIAF2D/2022-09-24_Design1_ca_Jarle-Tollaksen_fp?node-id=0%3A1
 
 ## Authors
 
