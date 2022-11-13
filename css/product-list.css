@@ -29,7 +29,7 @@
 }
 
 .product-list__card:hover{
-  box-shadow: 1px 1px 1px black;
+  box-shadow: -1px 1px 5px black;
 }
 
 .product-list__card img {
