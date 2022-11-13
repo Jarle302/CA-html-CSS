@@ -47,12 +47,20 @@ none/minor changes. Note in my figma file the mobile and desktop version are dif
 #### order_success
 none/minor changes
 
+#### Header/footer
+i optet to have a header footer on both mobile and desktop, i added a background-color to desktop to improve readability. 
+
 
 ## References
-All images from unsplash.com 
-Vipps icon from https://iconify.design/
-All other icons from https://fontawesome.com/ 
+ ##### All images from unsplash.com 
+ ##### Vipps icon from https://iconify.design/
+ ##### All other icons from https://fontawesome.com/ 
 
+##### I used https://css-tricks.com/snippets/css/css-triangle/ to learn how to make a triangle. 
+##### I used https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path to learn about clip path
+
+##### I used the checkbox hack as explained by noroff.
+##### I used grid to make the footer stay at the bottom as explained by noroff. 
 
 
 
