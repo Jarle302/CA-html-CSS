@@ -70,6 +70,10 @@ h1 {
   font-weight: 700;
 }
 
+.btn:hover{
+  background-color: #a75723;
+}
+
 .back-arrow {
   color: #000000;
   padding: 10px;
