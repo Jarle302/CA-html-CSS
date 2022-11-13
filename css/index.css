@@ -1,63 +1,48 @@
-
 .homepage__section--first {
-	background: url(../backgrounds/johannes-andersson-IqBsJY-buKo-unsplash-big.jpg)
-		no-repeat;
-	background-size: cover;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	
+  background: url(../backgrounds/johannes-andersson-IqBsJY-buKo-unsplash-big.jpg)
+    no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
 .homepage__h1 {
-	color: var(--heading-white);
-	text-shadow: 0px 0px 6px rgb(0, 0, 0);
-	background-color: rgb(0 0 0 / 19%);
-	margin-top: 22%;
+  color: var(--heading-white);
+  text-shadow: 0px 0px 6px rgb(0, 0, 0);
+  background-color: rgb(0 0 0 / 19%);
+  margin-top: 22%;
 }
 
 .homepage__button {
-	align-self: center;
-	
+  align-self: center;
 }
 
-
-
-
-
 .homepage__ul--selling-points {
-	color: var(--heading-white);
-    list-style: none;
-    font-size: 1.4rem;
-    text-shadow: 0px 0px 6px #ff8822;
-    background-color: #00000091;
-    max-width: 197px;
-    border: 2px solid var(--button--orange);
-    border-radius: 18px;
-	align-self: center;
+  color: var(--heading-white);
+  list-style: none;
+  font-size: 1.4rem;
+  text-shadow: 0px 0px 6px #ff8822;
+  background-color: #00000091;
+  max-width: 197px;
+  border: 2px solid var(--button--orange);
+  border-radius: 18px;
+  align-self: center;
 }
 
 .homepage__ul--selling-points li {
-	padding:20px 38px 20px 0px;
+  padding: 20px 38px 20px 0px;
 }
 
-
-
 @media screen and (min-width: 754px) {
-   
+  .homepage__ul--selling-points {
+    align-self: start;
+    margin-left: 20px;
+  }
 
-	.homepage__ul--selling-points {
-
-		align-self: start;
-		margin-left: 20px;
-
-	}
-	
-	.homepage__h1{
-		margin-top: 14%;
-		align-self: center;
-		
-	}
+  .homepage__h1 {
+    margin-top: 14%;
+    align-self: center;
+  }
 }

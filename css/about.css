@@ -1,54 +1,53 @@
-
 .about__main {
-	background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-rer14.jpg)
-		no-repeat top left;
-	background-size: cover;
+  background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-rer14.jpg)
+    no-repeat top left;
+  background-size: cover;
 }
 .about__div--text {
-	background: var(--background-grey);
-	max-width: 40%;
-	margin: 0 auto 20px;
-	padding: 5% 10% 5% 10%;
-	border-radius: 8px;
+  background: var(--background-grey);
+  max-width: 40%;
+  margin: 0 auto 20px;
+  padding: 5% 10% 5% 10%;
+  border-radius: 8px;
 }
 
 .about__h1 {
-	margin-top: 200px;
-	color: var(--heading-white);
-	text-shadow: 0px 0px 6px black;
-	background-color: rgba(0, 0, 0, 0.178);
-	width: fit-content;
-    margin-left: 20%;
+  margin-top: 200px;
+  color: var(--heading-white);
+  text-shadow: 0px 0px 6px black;
+  background-color: rgba(0, 0, 0, 0.178);
+  width: fit-content;
+  margin-left: 20%;
 }
 
 @media screen and (min-width: 650px) {
+  .about__div--wrapper {
+    position: fixed;
+    bottom: 7%;
+  }
 
-	.about__div--wrapper{
-		position: fixed;
-		bottom: 7%;
-	}
-	
-    .about__h1 {
-        margin: 0 0 0 5%;
-		font-size: 4rem;
-		text-align: start;
-    }
+  .about__h1 {
+    margin: 0 0 0 5%;
+    font-size: 4rem;
+    text-align: start;
+  }
 
-	.about__main{
-		background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-about.jpg) no-repeat center center;
+  .about__main {
+    background: url(../Backgrounds/fabrizio-conti-xPFhK0MGsyw-unsplash-about.jpg)
+      no-repeat center center;
     background-size: cover;
-	}
-	.about__div--text{
-		margin: 0 0 2% 5%;
-		padding: 1% 3%;
-		max-width: 67%;
-	}
+  }
+  .about__div--text {
+    margin: 0 0 2% 5%;
+    padding: 1% 3%;
+    max-width: 67%;
+  }
 }
 
-
 @media screen and (orientation: landscape) and (max-height: 477px) {
-    .about__div--wrapper{position: static;
+  .about__div--wrapper {
+    position: static;
     margin: top;
     margin-top: 168px;
-	}
+  }
 }

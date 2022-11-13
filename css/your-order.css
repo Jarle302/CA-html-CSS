@@ -1,84 +1,78 @@
-
-
 .your-order__section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.your-order__h1{
-	position: relative;
-    top: 45px;
+.your-order__h1 {
+  position: relative;
+  top: 45px;
 }
 
 .your-order__div--content {
-	border-radius: 40px;
-	padding: 28px 20px;
-	background-color:var(--background--light-grey);
-	margin-left:2%;
+  border-radius: 40px;
+  padding: 28px 20px;
+  background-color: var(--background--light-grey);
+  margin-left: 2%;
 }
 
 .your-order__div--image {
-	max-width: 60%;
-	margin: auto;
+  max-width: 60%;
+  margin: auto;
 }
 
-.btn--your-order{
-	margin-top:-27px;
+.btn--your-order {
+  margin-top: -27px;
 }
 
 table {
-	border-collapse: collapse;
-	margin: 20px auto;
-	font-size: 1.5rem;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 1.5rem;
 }
 
 td {
-	padding: 1px 24px 0px 0;
+  padding: 1px 24px 0px 0;
 }
 
 .your-order__table__tr--shipping {
-	background-color: var(--background--light-grey);
+  background-color: var(--background--light-grey);
 }
 
 @media screen and (min-width: 1000px) {
-    .your-order__main {
-		min-height: 100vh;
-	}
-  
-    
-    
-    
-    .your-order__section {
-        position: absolute;
-    }
+  .your-order__main {
+    min-height: 100vh;
+  }
 
-.your-order__main::before {
-	content: "";
-	background: url(/images/RainyDays_Logo.png) no-repeat;
-	padding: 40px;
-	background-size: contain;
-	min-height: 60px;
-	width: 200px;
-	position: absolute;
-	right: 0;
-	top: 317px;
-	z-index: 2000;
-}
+  .your-order__section {
+    position: absolute;
+  }
 
-.your-order__main::after {
-	content: "";
-	height: 0;
-	width: 0;
-	border-right: 400px solid var(--background--light-grey);
-	border-top: 400px solid transparent;
-	border-bottom: 400px solid transparent;
-	float: right;
+  .your-order__main::before {
+    content: "";
+    background: url(/images/RainyDays_Logo.png) no-repeat;
+    padding: 40px;
+    background-size: contain;
+    min-height: 60px;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 317px;
+    z-index: 2000;
+  }
 
-	top: 58px;
-	right: 0;
-	z-index: -1;
-}
-    
+  .your-order__main::after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-right: 400px solid var(--background--light-grey);
+    border-top: 400px solid transparent;
+    border-bottom: 400px solid transparent;
+    float: right;
+
+    top: 58px;
+    right: 0;
+    z-index: -1;
+  }
 }

@@ -20,9 +20,8 @@
 
 .order-success__p,
 .order-success__h1,
-.order-success__div--buttons  {
+.order-success__div--buttons {
   padding: 0 20px;
-  
 }
 
 .order-success__div--text {
@@ -45,8 +44,6 @@
 .order-success__btn--home {
   color: var(--small-text--black);
 }
-
-
 
 @media screen and (min-width: 650px) {
   .order-success__section {

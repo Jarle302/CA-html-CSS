@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Procceed with checkout to get your jacket and be ready for your next adventure!" />
+    <meta
+      name="description"
+      content="Procceed with checkout to get your jacket and be ready for your next adventure!"
+    />
     <title>Rain Days || Checkout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +34,9 @@
         />
       </a>
       <input type="checkbox" name="hamburger-menu" id="hamburger-menu" />
-      <label class="hamburger-menu__icon" for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+      <label class="hamburger-menu__icon" for="hamburger-menu"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
       <nav>
         <ul>
           <li class="nav__li"><a href="index.html">Home</a></li>
@@ -42,10 +47,11 @@
       </nav>
     </header>
     <main class="checkout__main">
-      <a href="your-order.html"><i class="back-arrow fa-solid fa-arrow-left"></i></a>
+      <a href="your-order.html"
+        ><i class="back-arrow fa-solid fa-arrow-left"></i
+      ></a>
       <form action="POST">
         <section class="checkout__section">
-          
           <h1>Checkout</h1>
           <h2>Billing details</h2>
           <div class="checkout__form__div--first">
@@ -73,77 +79,79 @@
             </fieldset>
           </div>
           <div class="checkout__div--second-background">
-          <h2>Payment options</h2>
-          <div class="checkout__form__div--radio">
-            <input
-              class="checkout__form__input--radio"
-              type="radio"
-              name="payment"
-              id="visa"
-              value="visa"
-            />
-            <label
-              id="visa-label"
-              class="checkout__form__label--visa"
-              for="visa"
-              ><i class="fa-brands fa-cc-visa"></i
-            ></label>
+            <h2>Payment options</h2>
+            <div class="checkout__form__div--radio">
+              <input
+                class="checkout__form__input--radio"
+                type="radio"
+                name="payment"
+                id="visa"
+                value="visa"
+              />
+              <label
+                id="visa-label"
+                class="checkout__form__label--visa"
+                for="visa"
+                ><i class="fa-brands fa-cc-visa"></i
+              ></label>
 
-            <input
-              class="checkout__form__input--radio"
-              type="radio"
-              name="payment"
-              id="mastercard"
-              value="mastercard"
-            />
-            <label for="mastercard"
-              ><i class="fa-brands fa-cc-mastercard"></i
-            ></label>
+              <input
+                class="checkout__form__input--radio"
+                type="radio"
+                name="payment"
+                id="mastercard"
+                value="mastercard"
+              />
+              <label for="mastercard"
+                ><i class="fa-brands fa-cc-mastercard"></i
+              ></label>
 
-            <input
-              class="checkout__form__input--radio"
-              type="radio"
-              name="payment"
-              id="vipps"
-              value="vipps"
-            />
-            <label class="vipps--label" for="vipps"><iconify-icon icon="arcticons:vipps"></iconify-icon></label>
+              <input
+                class="checkout__form__input--radio"
+                type="radio"
+                name="payment"
+                id="vipps"
+                value="vipps"
+              />
+              <label class="vipps--label" for="vipps"
+                ><iconify-icon icon="arcticons:vipps"></iconify-icon
+              ></label>
 
-            <input
-              class="checkout__form__input--radio"
-              type="radio"
-              name="payment"
-              id="paypal"
-              value="paypal"
-            />
-            <label for="paypal"><i class="fa-brands fa-paypal"></i></label>
+              <input
+                class="checkout__form__input--radio"
+                type="radio"
+                name="payment"
+                id="paypal"
+                value="paypal"
+              />
+              <label for="paypal"><i class="fa-brands fa-paypal"></i></label>
+            </div>
+            <div class="checkout__form__div--second">
+              <fieldset class="checkout__fieldset--second">
+                <label for="creditcardnumber--checkout">creditcardnumber</label>
+                <input
+                  type="number"
+                  name="creditcardnumber--checkout"
+                  id="creditcardnumber--checkout"
+                />
+                <label for="card-owner--checkout">card owner</label>
+                <input
+                  type="text"
+                  name="card-owner--checkout"
+                  id="card-owner--checkout"
+                />
+                <label for="expires--checkout">expires</label>
+                <input
+                  type="number"
+                  name="expires--checkout"
+                  id="expires--checkout"
+                />
+                <label for="cvc--checkout">cvc</label>
+                <input type="number" name="cvc--checkout" id="cvc--checkout" />
+              </fieldset>
+            </div>
+            <a class="btn" href="/order-success.html">Checkout</a>
           </div>
-          <div class="checkout__form__div--second">
-            <fieldset class="checkout__fieldset--second">
-              <label for="creditcardnumber--checkout">creditcardnumber</label>
-              <input
-                type="number"
-                name="creditcardnumber--checkout"
-                id="creditcardnumber--checkout"
-              />
-              <label for="card-owner--checkout">card owner</label>
-              <input
-                type="text"
-                name="card-owner--checkout"
-                id="card-owner--checkout"
-              />
-              <label for="expires--checkout">expires</label>
-              <input
-                type="number"
-                name="expires--checkout"
-                id="expires--checkout"
-              />
-              <label for="cvc--checkout">cvc</label>
-              <input type="number" name="cvc--checkout" id="cvc--checkout" />
-            </fieldset>
-          </div>
-          <a class="btn" href="/order-success.html">Checkout</a>
-        </div>
         </section>
       </form>
     </main>

@@ -1,83 +1,79 @@
 :root {
-	--header-footer: #a75723;
-	--button--orange: #ff8822;
-	--background-white: #f5f5f5;
-	--background-grey: #d9d9d9;
-	--blue: #0093b3;
-	--heading-white: #ffffff;
-	--heading-dark: #000000;
-	--contact-brown: #b3590c;
-	--h1__font-size: 2rem;
-	--background--light-grey: #f0f0f0;
-	--border-radius: 8px;
-	--success-green: #094200;
-	--small-text--black: #000000;
+  --header-footer: #a75723;
+  --button--orange: #ff8822;
+  --background-white: #f5f5f5;
+  --background-grey: #d9d9d9;
+  --blue: #0093b3;
+  --heading-white: #ffffff;
+  --heading-dark: #000000;
+  --contact-brown: #b3590c;
+  --h1__font-size: 2rem;
+  --background--light-grey: #f0f0f0;
+  --border-radius: 8px;
+  --success-green: #094200;
+  --small-text--black: #000000;
 }
 
 body {
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	min-height: 100vh;
-	margin: 0;
-	font-family: "Noto Sans", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
 }
 
-main{
-	min-height: 100vh;
+main {
+  min-height: 100vh;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 a {
-	text-decoration: none;
-	color: white;
-	cursor: pointer;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 fieldset {
-	border: solid orange 1px;
-	display: flex;
-	flex-direction: column;
+  border: solid orange 1px;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 /* Headings  */
 h1,
 h2,
 h3 {
-	text-align: center;
-	font-family: "Noto Serif", serif;
-	text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
 }
 h1 {
-	font-size: var(--h1__font-size);
+  font-size: var(--h1__font-size);
 }
 
 /* buttons */
 
 .btn {
-	padding: 18px;
-	border-radius: 24px;
-	background: var(--button--orange);
-	text-transform: uppercase;
-	font-size: 1rem;
-	font-family: "Noto Serif";
-	box-sizing: border-box;
-	min-width: 205px;
-	text-align: center;
-	color: var(--small-text--black);
-	font-weight: 700;
+  padding: 18px;
+  border-radius: 24px;
+  background: var(--button--orange);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Noto Serif";
+  box-sizing: border-box;
+  min-width: 205px;
+  text-align: center;
+  color: var(--small-text--black);
+  font-weight: 700;
 }
-
 
 .back-arrow {
-	color: #000000;
-	padding: 10px;
-	position: fixed;
-    top: 11%;
-	z-index: 3000;
+  color: #000000;
+  padding: 10px;
+  position: fixed;
+  top: 11%;
+  z-index: 3000;
 }
-
