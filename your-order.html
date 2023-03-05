@@ -33,6 +33,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <script type="module" src="/js/yourOrder.js" defer></script>
   </head>
   <body>
     <header>
@@ -62,25 +63,7 @@
       <section class="your-order__section">
         <h1 class="your-order__h1">Your order</h1>
         <div class="your-order__div--content">
-          <div class="your-order__div--image">
-            <img
-              src="/images/Products/RainyDays_Jacket1-product.png"
-              alt="Jacket" />
-          </div>
-          <table>
-            <tr>
-              <td>Product</td>
-              <td>20$</td>
-            </tr>
-            <tr class="your-order__table__tr--shipping">
-              <td>Shipping</td>
-              <td>free</td>
-            </tr>
-            <tr>
-              <td>Total</td>
-              <td>20$</td>
-            </tr>
-          </table>
+          <table id="table--your-order"></table>
         </div>
         <a class="btn btn--your-order" href="/checkout.html"
           >Proceed to checkout</a

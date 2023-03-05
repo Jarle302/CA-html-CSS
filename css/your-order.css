@@ -5,6 +5,10 @@
   margin-bottom: 40px;
 }
 
+.small-image {
+  width: 20px;
+}
+
 .your-order__h1 {
   position: relative;
   top: 45px;
