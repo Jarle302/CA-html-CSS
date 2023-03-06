@@ -5,6 +5,26 @@ header {
   width: 100%;
   z-index: 2500;
 }
+.nav__icon--cart {
+  font-size: 12px;
+  position: absolute;
+  right: 25px;
+  bottom: 38px;
+  z-index: 10000;
+}
+
+.redNumber {
+  color: var(--success-green);
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.fa-bars {
+  position: absolute;
+  right: 9px;
+  top: 16px;
+  font-size: 22px;
+}
 
 header,
 footer {

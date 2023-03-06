@@ -1,3 +1,7 @@
+.product-specific__container--buttons {
+  display: flex;
+}
+
 .product-specific__section {
   position: relative;
   margin-bottom: 40px;
