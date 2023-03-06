@@ -11,7 +11,10 @@ document.querySelector("#table--your-order").innerHTML += cartInventory
   )
   .join("");
 
-document.querySelector("#table--your-order").innerHTML += `<tr>
+document.querySelector("#table--your-order").innerHTML += ` <hr></hr> <tr>
   <td>Totall</td>
-  <td>${cartInventory.reduce(acc, cartInventory.price)}</td>
+  <td>${cartInventory.reduce(
+    (acc, cartInventory) => acc + cartInventory.price,
+    0
+  )}$</td>
 </tr>`;
