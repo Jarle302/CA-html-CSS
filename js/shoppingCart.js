@@ -3,9 +3,46 @@ export const cartInventory = sessionStorage.getItem("cartInventory")
   : [];
 
 export function addToCart(data, index) {
-  cartInventory.push({ ...data[index] });
+  cartInventory.push({
+    ...data[index],
+    key: `${data[index].name}-${cartInventory.length + 1}`,
+  });
   sessionStorage.setItem("cartInventory", JSON.stringify(cartInventory));
+  console.log(cartInventory);
   location.reload();
+}
+
+export function removeFromCart(event, item) {
+  item.findIndex((jacket) => jacket.key === event.target.dataset.key) !== -1 &&
+    item.splice(
+      item.findIndex((jacket) => jacket.key === event.target.dataset.key),
+      1
+    );
+  sessionStorage.setItem("cartInventory", JSON.stringify(item));
+  renderOrder(JSON.parse(sessionStorage.getItem("cartInventory")));
+  location.reload();
+}
+
+export function renderOrder(orderArr) {
+  document.querySelector("#table--your-order").innerHTML = orderArr
+    .map(
+      (jacket) => `<tr>
+  <td>${jacket.name}</td>
+  <td>${jacket.price}$</td>
+  <td><img class="small-image" src=${jacket.img} alt=${jacket.name} jacket></td>
+<td> <button data-key=${jacket.key} class="removeFromCart">test</button> </td>
+</tr>
+ `
+    )
+    .join("");
+
+  document.querySelector("#table--your-order").innerHTML += ` <hr></hr> <tr>
+  <td>Totall</td>
+  <td>${cartInventory.reduce(
+    (acc, cartInventory) => acc + cartInventory.price,
+    0
+  )}$</td>
+</tr>`;
 }
 
 const spanCartIcon = document.createElement("span");
