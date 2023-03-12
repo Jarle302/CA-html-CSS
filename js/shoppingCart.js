@@ -50,13 +50,13 @@ export function renderOrder(orderArr, domEl) {
 export function renderCart(arr, domEl, domElTwo = domEl) {
   arr.length === 0
     ? (domEl.innerHTML = `
-      <h2>Cart empty</h2>
-  <p>
+      <h2 class="h2--cart">Cart empty</h2>
+  <p class="p--cart" >
     To add something to your cart, browse our fantastic jackets, click on
     the one you like to read more, then add it to cart if it fits your
     needs
   </p>
-  <a class="btn" href="../product-list.html">Our Jackets</a>
+  <a class="a--cart" class="btn" href="../product-list.html">Our Jackets</a>
 `)
     : renderOrder(arr, domElTwo);
 }

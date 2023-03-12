@@ -113,9 +113,26 @@ nav a {
   width: 23px;
 }
 
-.shopping-cart p {
+.p--cart {
   max-width: 322px;
 }
+
+.h2--cart {
+  text-shadow: none;
+  background-color: white;
+}
+
+.removeFromCart {
+  border-radius: 8px;
+  background: white;
+  border: solid var(--button--orange);
+}
+
+.removeFromCart:active {
+  background-color: var(--button--orange);
+  color: white;
+}
+
 @media screen and (min-width: 650px) {
   .hamburger-menu__icon {
     display: none;
