@@ -42,7 +42,9 @@ export function renderOrder(orderArr) {
     (acc, cartInventory) => acc + cartInventory.price,
     0
   )}$</td>
-</tr>`;
+</tr>   <a class="btn btn--your-order" href="/checkout.html"
+>Proceed to checkout</a
+>`;
 }
 
 const spanCartIcon = document.createElement("span");
@@ -55,7 +57,6 @@ spanCartIcon.innerHTML = `<i class="fa-solid fa-cart-shopping"></i> Cart(<span c
 
 spanCartIcon.classList.add("nav__icon--cart");
 
-/*
 const cartContainer = document.createElement("div");
 
 header.insertBefore(cartContainer, header.children[2]);
@@ -79,12 +80,11 @@ cartContainer.innerHTML += ` <hr></hr> <tr>
   )}$</td>
 </tr>`;
 
-cartContainer.style.display = "none";
+cartContainer.style.display = " none";
 
-cartContainer.addEventListener("mouseover", () => {
-  cartContainer.style.display = "none"
-    ? (cartContainer.style.display = "block")
-    : (cartContainer.style.display = "none");
+cartContainer.addEventListener("click", () => {
+  cartContainer.style.display =
+    cartContainer.style.display === "none"
+      ? (cartContainer.style.display = "block")
+      : (cartContainer.style.display = "none");
 });
-
-*/
