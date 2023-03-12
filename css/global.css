@@ -1,5 +1,6 @@
 :root {
   --header-footer: #a75723;
+  --header-footer--pressed: #9c511f;
   --button--orange: #ff8822;
   --background-white: #f5f5f5;
   --background-grey: #d9d9d9;
@@ -57,10 +58,10 @@ h1 {
 /* buttons */
 
 .btn {
-  padding: 18px;
-  border-radius: 24px;
+  padding: 11px 20px;
+  border-radius: 17px;
   background: var(--button--orange);
-  text-transform: uppercase;
+  display: block;
   font-size: 1rem;
   font-family: "Noto Serif";
   box-sizing: border-box;
@@ -70,7 +71,7 @@ h1 {
   font-weight: 700;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #a75723;
 }
 

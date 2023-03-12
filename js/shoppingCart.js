@@ -12,79 +12,75 @@ export function addToCart(data, index) {
   location.reload();
 }
 
-export function removeFromCart(event, item) {
+export function removeFromCart(event, item, domEl) {
   item.findIndex((jacket) => jacket.key === event.target.dataset.key) !== -1 &&
     item.splice(
       item.findIndex((jacket) => jacket.key === event.target.dataset.key),
       1
     );
   sessionStorage.setItem("cartInventory", JSON.stringify(item));
-  renderOrder(JSON.parse(sessionStorage.getItem("cartInventory")));
+  renderOrder(JSON.parse(sessionStorage.getItem("cartInventory")), domEl);
   location.reload();
 }
 
-export function renderOrder(orderArr) {
-  document.querySelector("#table--your-order").innerHTML = orderArr
+export function renderOrder(orderArr, domEl) {
+  domEl.innerHTML = orderArr
     .map(
       (jacket) => `<tr>
   <td>${jacket.name}</td>
   <td>${jacket.price}$</td>
   <td><img class="small-image" src=${jacket.img} alt=${jacket.name} jacket></td>
-<td> <button data-key=${jacket.key} class="removeFromCart">test</button> </td>
+<td> <button data-key=${jacket.key} class="removeFromCart">Remove</button> </td>
 </tr>
  `
     )
     .join("");
 
-  document.querySelector("#table--your-order").innerHTML += ` <hr></hr> <tr>
+  domEl.innerHTML += ` <hr></hr> <tr>
   <td>Totall</td>
   <td>${cartInventory.reduce(
     (acc, cartInventory) => acc + cartInventory.price,
     0
   )}$</td>
-</tr>   <a class="btn btn--your-order" href="/checkout.html"
+</tr>   <a class="btn" href="/checkout.html"
 >Proceed to checkout</a
 >`;
 }
 
-const spanCartIcon = document.createElement("span");
+export function renderCart(arr, domEl, domElTwo = domEl) {
+  arr.length === 0
+    ? (domEl.innerHTML = `
+      <h2>Cart empty</h2>
+  <p>
+    To add something to your cart, browse our fantastic jackets, click on
+    the one you like to read more, then add it to cart if it fits your
+    needs
+  </p>
+  <a class="btn" href="../product-list.html">Our Jackets</a>
+`)
+    : renderOrder(arr, domElTwo);
+}
+
+const cartIcon = document.createElement("span");
 
 const header = document.querySelector("header");
 
-header.insertBefore(spanCartIcon, header.children[2]);
+header.insertBefore(cartIcon, header.children[2]);
 
-spanCartIcon.innerHTML = `<i class="fa-solid fa-cart-shopping"></i> Cart(<span class="redNumber">${cartInventory.length})</span>`;
+cartIcon.innerHTML = `<button class="button--cart" > <i class="fa-solid fa-cart-shopping"></i> Cart(<span class="redNumber">${cartInventory.length})</span> </button>`;
 
-spanCartIcon.classList.add("nav__icon--cart");
+cartIcon.classList.add("nav__icon--cart");
 
 const cartContainer = document.createElement("div");
+cartContainer.classList.add("shopping-cart");
 
 header.insertBefore(cartContainer, header.children[2]);
 
-cartContainer.innerHTML += cartInventory
-  .map(
-    (jacket) => `<tr>
-  <td>${jacket.name}</td>
-  <td>${jacket.price}$</td>
-  <td><img class="small-image" src=${jacket.img} alt=${jacket.name} jacket></td>
-</tr>
- `
-  )
-  .join("");
+renderCart(cartInventory, cartContainer);
 
-cartContainer.innerHTML += ` <hr></hr> <tr>
-  <td>Totall</td>
-  <td>${cartInventory.reduce(
-    (acc, cartInventory) => acc + cartInventory.price,
-    0
-  )}$</td>
-</tr>`;
-
-cartContainer.style.display = " none";
-
-cartContainer.addEventListener("click", () => {
+document.querySelector(".button--cart").addEventListener("click", () => {
   cartContainer.style.display =
     cartContainer.style.display === "none"
-      ? (cartContainer.style.display = "block")
+      ? (cartContainer.style.display = "grid")
       : (cartContainer.style.display = "none");
 });

@@ -1,7 +1,3 @@
-.product-list__main {
-  background-color: var(--background-grey);
-}
-
 .product-list__section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -28,7 +24,7 @@
   padding-top: 15px;
 }
 
-.product-list__card:hover{
+.product-list__card:hover {
   box-shadow: -1px 1px 5px black;
 }
 
@@ -58,7 +54,6 @@
 @media screen and (min-width: 650px) {
   .product-list__section {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
 
   .product-list__h1--our-jackets {

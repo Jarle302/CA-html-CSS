@@ -8,9 +8,18 @@ header {
 .nav__icon--cart {
   font-size: 12px;
   position: absolute;
-  right: 25px;
-  bottom: 38px;
-  z-index: 10000;
+  right: 74px;
+  bottom: 15px;
+}
+
+.button--cart {
+  background-color: var(--header-footer);
+  border: none;
+}
+
+.button--cart:active {
+  background-color: var(--header-footer--pressed);
+  box-shadow: 0px 0px 1px black;
 }
 
 .redNumber {
@@ -85,6 +94,28 @@ nav a {
   color: var(--small-text--black);
 }
 
+.shopping-cart {
+  display: none;
+  position: absolute;
+  background: black;
+  top: 100%;
+  right: 21px;
+  color: white;
+  overflow-y: scroll;
+  height: 250px;
+  padding: 28px;
+  border-radius: 17px;
+  background: white;
+  border: var(--button--orange) solid 4px;
+  color: var(--small-text--black);
+}
+.shopping-cart img {
+  width: 23px;
+}
+
+.shopping-cart p {
+  max-width: 322px;
+}
 @media screen and (min-width: 650px) {
   .hamburger-menu__icon {
     display: none;
@@ -94,7 +125,7 @@ nav a {
     display: flex;
     padding: 0 0 0 0;
     background: none;
-    right: 0;
+    right: 93px;
     position: fixed;
     top: 0px;
   }
@@ -106,6 +137,13 @@ nav a {
     color: var(--heading-white);
   }
 
+  .nav__icon--cart {
+    font-size: 12px;
+    position: absolute;
+    right: 25px;
+    bottom: 19px;
+    z-index: 10000;
+  }
   .nav__li--active a {
     color: var(--small-text--black);
   }

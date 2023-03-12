@@ -1,5 +1,14 @@
-import { renderOrder, cartInventory, removeFromCart } from "./shoppingCart.js";
-console.log(cartInventory);
+import { cartInventory, removeFromCart, renderCart } from "./shoppingCart.js";
+
+const orderList = document.querySelector("#table--your-order");
+
+renderCart(
+  cartInventory,
+  document.querySelector(".your-order__div--content"),
+  orderList
+);
+
+/*
 cartInventory.length === 0
   ? (document.querySelector(".your-order__div--content").innerHTML = `
       
@@ -11,12 +20,12 @@ cartInventory.length === 0
         </p>
         <a class="btn" href="../product-list.html">Our Jackets</a>
     `)
-  : renderOrder(cartInventory);
-
+  : renderOrder(cartInventory, orderList);
+*/
 document
   .querySelectorAll(".removeFromCart")
   .forEach((button) =>
     button.addEventListener("click", (event) =>
-      removeFromCart(event, cartInventory)
+      removeFromCart(event, cartInventory, orderList)
     )
   );
