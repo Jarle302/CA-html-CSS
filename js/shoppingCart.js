@@ -8,7 +8,6 @@ export function addToCart(data, index) {
     key: `${data[index].name}-${cartInventory.length + 1}`,
   });
   sessionStorage.setItem("cartInventory", JSON.stringify(cartInventory));
-  console.log(cartInventory);
   location.reload();
 }
 
@@ -20,7 +19,14 @@ export function removeFromCart(event, item, domEl) {
     );
   sessionStorage.setItem("cartInventory", JSON.stringify(item));
   renderOrder(JSON.parse(sessionStorage.getItem("cartInventory")), domEl);
-  location.reload();
+
+  document
+    .querySelectorAll(".removeFromCart")
+    .forEach((button) =>
+      button.addEventListener("click", (event) =>
+        removeFromCart(event, item, domEl)
+      )
+    );
 }
 
 export function renderOrder(orderArr, domEl) {
@@ -84,3 +90,11 @@ document.querySelector(".button--cart").addEventListener("click", () => {
       ? (cartContainer.style.display = "grid")
       : (cartContainer.style.display = "none");
 });
+
+document
+  .querySelectorAll(".removeFromCart")
+  .forEach((button) =>
+    button.addEventListener("click", (event) =>
+      removeFromCart(event, cartInventory, cartContainer)
+    )
+  );
