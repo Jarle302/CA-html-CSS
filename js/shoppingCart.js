@@ -43,8 +43,15 @@ export function removeFromCart(event, item, domEl) {
   the one you like to read more, then add it to cart if it fits your
   needs
 </p>
-<a class="a--cart" class="btn" href="../product-list.html">Our Jackets</a>
+<a  class="btn" href="../product-list.html">Our Jackets</a>
+
 `);
+  document.querySelector(".button--cart").addEventListener("click", () => {
+    cartContainer.style.display =
+      cartContainer.style.display === "none"
+        ? (cartContainer.style.display = "grid")
+        : (cartContainer.style.display = "none");
+  });
 }
 
 export function renderOrder(orderArr, domEl) {
@@ -80,7 +87,7 @@ export function renderCart(arr, domEl, domElTwo = domEl) {
     the one you like to read more, then add it to cart if it fits your
     needs
   </p>
-  <a class="a--cart" class="btn" href="../product-list.html">Our Jackets</a>
+  <a  class="btn" href="../product-list.html">Our Jackets</a>
 `)
     : renderOrder(arr, domElTwo);
 }
