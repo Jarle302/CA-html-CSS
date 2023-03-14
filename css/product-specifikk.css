@@ -89,3 +89,20 @@
     bottom: 0%;
   }
 }
+
+input[type="radio"] {
+  display: none;
+}
+
+.label--radio {
+  padding: 14px;
+  border-radius: 5px;
+}
+
+select {
+  padding: 8px 0px;
+}
+
+input[type="radio"]:checked + label {
+  border: solid 2px orange;
+}

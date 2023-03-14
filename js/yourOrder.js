@@ -1,5 +1,13 @@
 import { cartInventory, removeFromCart, renderCart } from "./shoppingCart.js";
 
+const queryString = document.location.search;
+const parameters = new URLSearchParams(queryString);
+const jacketIndex = parameters.get("index");
+
+document.querySelector(
+  ".back-arrow"
+).href = `../product-specifikk.html?index=${jacketIndex}`;
+
 const orderList = document.querySelector("#table--your-order");
 
 renderCart(
