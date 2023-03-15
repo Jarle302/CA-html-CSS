@@ -17,5 +17,3 @@ function renderList({ name, price, img }, index) {
 }
 
 data.forEach((jacket, index) => renderList(jacket, index));
-
-console.log("test");

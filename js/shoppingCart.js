@@ -3,9 +3,18 @@ export const cartInventory = sessionStorage.getItem("cartInventory")
   : [];
 
 export function addToCart(data, index) {
+  const sizeSelect = document.querySelector("#Size").value
+    ? document.querySelector("#Size").value
+    : "M";
+  const colorRadio = document.querySelector(`input[name="color"]:checked`)
+    ? document.querySelector('input[name="color"]:checked').value
+    : "black";
+
   cartInventory.push({
     ...data[index],
     key: `${data[index].name}-${cartInventory.length + 1}`,
+    color: `${colorRadio}`,
+    size: `${sizeSelect}`,
   });
   sessionStorage.setItem("cartInventory", JSON.stringify(cartInventory));
   /*

@@ -13,21 +13,22 @@ function renderSpecific(data, index) {
             class="product-specific__img"
             src=${data[index].img}
             alt="${data[index].name} Jacket" />
-          <label for="Size">Size</label>
+          
+<div class="container--buttons" >
+<label for="Size">Size</label>
           <select name="Size" id="Size">
           ${data[index].size.map(
             (size) => `<option value=${size}>${size}</option>`
           )}            
           </select>
-
           ${data[index].color
             .map(
               (color) => ` 
-            <input type="radio" id="color--${color}" name="color" value="${color}" >
+            <input type="radio" class="input--radio" id="color--${color}" name="color" value="${color}" >
 <label class="label--radio" style="background-color:${color}" for="color--${color}"></label>`
             )
             .join("")}            
-
+</div>
           <div class="product-specific__div--name-and-price">
             <p class="product-specific__p--name">${data[index].name}</p>
             <p class="product-specific__p--price">${data[index].price}$</p>
@@ -52,7 +53,7 @@ console.log(cartInventory);
 /*
 function popUp(data,jacketIndex) {
   document.querySelector(".popUp").innerHTML = (
-    
+    <button>X</button>
     <h2>${data.name}</h2>
     <h3 class="h3--popUp">
       You have sucessfully placed this item in your cart
