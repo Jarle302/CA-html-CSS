@@ -24,7 +24,8 @@ export function addToCart(data, index) {
   );
   cartIcon.innerHTML = `<button class="button--cart" > <i class="fa-solid fa-cart-shopping"></i> Cart(<span class="redNumber">${cartInventory.length})</span> </button>`;
 */
-  location.reload();
+  popUp(data, index);
+  //location.reload();
 }
 
 export function removeFromCart(event, item, domEl) {
@@ -132,3 +133,33 @@ document
       removeFromCart(event, cartInventory, cartContainer)
     )
   );
+
+function popUp(data, jacketIndex) {
+  document.querySelector(".popUp").innerHTML = `
+  <div class="popUp--container">
+      <button class="button--x" >X</button>
+      <h2>${data[jacketIndex].name}</h2>
+      <h3 class="h3--popUp">
+        You have sucessfully placed this item in your cart
+      </h3>
+      <table>
+        <tr>
+          <td>Color</td>
+          <td>${data[jacketIndex].color}</td>
+        </tr>
+        <tr>
+          <td>Size</td>
+          <td>${data[jacketIndex].size}</td>
+        </tr>
+      </table>
+      
+  <img class="imgPopUp" src=${data[jacketIndex].img} alt=${data[jacketIndex].name} jacket>
+
+  <div class="button--popUp">
+  <a href="product-list.html" class="btn">Continue shopping</a>
+  <a href="your-order.html" class="btn">Your order</a>
+  </div>
+  </div>
+    `;
+  document.querySelector(".popUp").style.display = "inline";
+}
