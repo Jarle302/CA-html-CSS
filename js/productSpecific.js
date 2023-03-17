@@ -50,7 +50,3 @@ document
   .addEventListener("click", () => addToCart(data, jacketIndex));
 
 console.log(cartInventory);
-
-document.querySelector(".button--x").addEventListener("click", () => {
-  document.querySelector(".popUp").style.display = "none";
-});
