@@ -130,12 +130,16 @@ input[type="radio"]:checked + label {
 
 .popUp {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 10000;
-  background: #f0f0f0;
-  top: 10%;
-  bottom: 0;
+  background: #ffffff;
+  top: 7%;
   left: 30%;
   right: 30%;
   border: 1px solid black;
+  padding-bottom: 28px;
+}
+
+.h3--popUp {
+  color: green;
 }

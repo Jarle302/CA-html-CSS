@@ -17,15 +17,28 @@ export function addToCart(data, index) {
     size: `${sizeSelect}`,
   });
   sessionStorage.setItem("cartInventory", JSON.stringify(cartInventory));
-  /*
+
   renderCart(
     JSON.parse(sessionStorage.getItem("cartInventory")),
     cartContainer
   );
   cartIcon.innerHTML = `<button class="button--cart" > <i class="fa-solid fa-cart-shopping"></i> Cart(<span class="redNumber">${cartInventory.length})</span> </button>`;
-*/
+  document.querySelector(".button--cart").addEventListener("click", () => {
+    cartContainer.style.display =
+      cartContainer.style.display === "none"
+        ? (cartContainer.style.display = "grid")
+        : (cartContainer.style.display = "none");
+  });
+
+  document
+    .querySelectorAll(".removeFromCart")
+    .forEach((button) =>
+      button.addEventListener("click", (event) =>
+        removeFromCart(event, cartInventory, cartContainer)
+      )
+    );
+
   popUp(data, index);
-  //location.reload();
 }
 
 export function removeFromCart(event, item, domEl) {
@@ -162,4 +175,7 @@ function popUp(data, jacketIndex) {
   </div>
     `;
   document.querySelector(".popUp").style.display = "inline";
+  document.querySelector(".button--x").addEventListener("click", () => {
+    document.querySelector(".popUp").style.display = "none";
+  });
 }
