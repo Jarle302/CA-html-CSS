@@ -3,12 +3,29 @@ export const cartInventory = sessionStorage.getItem("cartInventory")
   : [];
 
 export function addToCart(data, index) {
-  const sizeSelect = document.querySelector("#Size").value
+  let sizeSelect = document.querySelector("#Size").value
     ? document.querySelector("#Size").value
     : "M";
-  const colorRadio = document.querySelector(`input[name="color"]:checked`)
+  let colorRadio = document.querySelector(`input[name="color"]:checked`)
     ? document.querySelector('input[name="color"]:checked').value
     : "black";
+
+  document
+    .querySelector("#Size")
+    .addEventListener(
+      "change",
+      () => (sizeSelect = document.querySelector("#Size").value)
+    );
+
+  document.querySelectorAll(`input[name="color"]`).forEach((button) => {
+    button.addEventListener(
+      "change",
+      () =>
+        (colorRadio = document.querySelector(
+          `input[name="color"]:checked`
+        ).value)
+    );
+  });
 
   cartInventory.push({
     ...data[index],
@@ -37,8 +54,13 @@ export function addToCart(data, index) {
         removeFromCart(event, cartInventory, cartContainer)
       )
     );
+  const test = JSON.parse(sessionStorage.getItem("cartInventory"));
+  console.log(test, cartInventory, index);
 
-  popUp(data, index);
+  popUp(
+    JSON.parse(sessionStorage.getItem("cartInventory")),
+    JSON.parse(sessionStorage.getItem("cartInventory")).length - 1
+  );
 }
 
 export function removeFromCart(event, item, domEl) {
@@ -170,7 +192,7 @@ function popUp(data, jacketIndex) {
 
   <div class="button--popUp">
   <a href="product-list.html" class="btn">Continue shopping</a>
-  <a href="your-order.html" class="btn">Your order</a>
+  <a href="your-order.html" class="btn btn--second">Your order</a>
   </div>
   </div>
     `;
@@ -178,4 +200,5 @@ function popUp(data, jacketIndex) {
   document.querySelector(".button--x").addEventListener("click", () => {
     document.querySelector(".popUp").style.display = "none";
   });
+  console.log(data);
 }

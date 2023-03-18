@@ -69,6 +69,14 @@ h1 {
   text-align: center;
   color: var(--small-text--black);
   font-weight: 700;
+  box-shadow: 1px 1px black;
+  border: rgb(0, 0, 0) 1px solid;
+}
+
+.btn--second {
+  background: white;
+  border: orange 1px solid;
+  box-shadow: 1px 1px black;
 }
 
 .btn:hover {

@@ -42,10 +42,6 @@
   margin: 0;
 }
 
-.product-specific__button--cta {
-  margin-bottom: -20px;
-}
-
 @media screen and (min-width: 650px) {
   .product-specific__div {
     z-index: 1000;
@@ -133,7 +129,7 @@ input[type="radio"]:checked + label {
   position: fixed;
   z-index: 10000;
   background: #ffffff;
-  top: 7%;
+  top: 15%;
   left: 30%;
   right: 30%;
   border: 1px solid black;

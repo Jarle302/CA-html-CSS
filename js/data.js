@@ -14,7 +14,7 @@ export const data = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a ipsum in eros sollicitudin sodales. Suspendisse faucibus, justo in mattis ultrices, risus magna molestie massa, id pretium sapien nisi at eros. Etiam libero mauris, consectetur eget nibh ac, ullamcorper convallis dolor. Maecenas ullamcorper arcu placerat sem ornare, vitae mattis lacus hendrerit. Aliquam ultricies turpis libero, a lobortis purus ultricies sed. Aliquam sagittis dui lorem, ut varius tortor eleifend sed. Donec varius ut neque ut viverra.",
     img: "./images/products/Immovable.png",
-    size: ["xs", "s", "m"],
+    size: ["XS", "S", "M"],
     color: ["red", "black"],
   },
   {
@@ -23,7 +23,7 @@ export const data = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a ipsum in eros sollicitudin sodales. Suspendisse faucibus, justo in mattis ultrices, risus magna molestie massa, id pretium sapien nisi at eros. Etiam libero mauris, consectetur eget nibh ac, ullamcorper convallis dolor. Maecenas ullamcorper arcu placerat sem ornare, vitae mattis lacus hendrerit. Aliquam ultricies turpis libero, a lobortis purus ultricies sed. Aliquam sagittis dui lorem, ut varius tortor eleifend sed. Donec varius ut neque ut viverra.",
     img: "./images/products/motorspeed.png",
-    size: ["s", "m", "l"],
+    size: ["S", "M", "L"],
     color: ["red", "black", "green"],
   },
   {
@@ -32,7 +32,7 @@ export const data = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a ipsum in eros sollicitudin sodales. Suspendisse faucibus, justo in mattis ultrices, risus magna molestie massa, id pretium sapien nisi at eros. Etiam libero mauris, consectetur eget nibh ac, ullamcorper convallis dolor. Maecenas ullamcorper arcu placerat sem ornare, vitae mattis lacus hendrerit. Aliquam ultricies turpis libero, a lobortis purus ultricies sed. Aliquam sagittis dui lorem, ut varius tortor eleifend sed. Donec varius ut neque ut viverra.",
     img: "./images/products/reliable.png",
-    size: ["xs", "s", "xl"],
+    size: ["XS", "S", "XL"],
     color: ["black"],
   },
   {
@@ -41,7 +41,7 @@ export const data = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a ipsum in eros sollicitudin sodales. Suspendisse faucibus, justo in mattis ultrices, risus magna molestie massa, id pretium sapien nisi at eros. Etiam libero mauris, consectetur eget nibh ac, ullamcorper convallis dolor. Maecenas ullamcorper arcu placerat sem ornare, vitae mattis lacus hendrerit. Aliquam ultricies turpis libero, a lobortis purus ultricies sed. Aliquam sagittis dui lorem, ut varius tortor eleifend sed. Donec varius ut neque ut viverra.",
     img: "./images/products/running.png",
-    size: ["xs", "s", "m"],
+    size: ["XS", "S", "M"],
     color: ["blue", "black", "grey"],
   },
   {
@@ -50,7 +50,7 @@ export const data = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a ipsum in eros sollicitudin sodales. Suspendisse faucibus, justo in mattis ultrices, risus magna molestie massa, id pretium sapien nisi at eros. Etiam libero mauris, consectetur eget nibh ac, ullamcorper convallis dolor. Maecenas ullamcorper arcu placerat sem ornare, vitae mattis lacus hendrerit. Aliquam ultricies turpis libero, a lobortis purus ultricies sed. Aliquam sagittis dui lorem, ut varius tortor eleifend sed. Donec varius ut neque ut viverra.",
     img: "./images/products/shell.png",
-    size: ["xs", "s", "m"],
+    size: ["XS", "S", "M"],
     color: ["red", "black"],
   },
 
@@ -60,7 +60,7 @@ export const data = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a ipsum in eros sollicitudin sodales. Suspendisse faucibus, justo in mattis ultrices, risus magna molestie massa, id pretium sapien nisi at eros. Etiam libero mauris, consectetur eget nibh ac, ullamcorper convallis dolor. Maecenas ullamcorper arcu placerat sem ornare, vitae mattis lacus hendrerit. Aliquam ultricies turpis libero, a lobortis purus ultricies sed. Aliquam sagittis dui lorem, ut varius tortor eleifend sed. Donec varius ut neque ut viverra.",
     img: "./images/products/warm.png",
-    size: ["xs", "s", "m"],
+    size: ["XS", "S", "M"],
     color: ["red", "black"],
   },
   {
@@ -69,7 +69,7 @@ export const data = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a ipsum in eros sollicitudin sodales. Suspendisse faucibus, justo in mattis ultrices, risus magna molestie massa, id pretium sapien nisi at eros. Etiam libero mauris, consectetur eget nibh ac, ullamcorper convallis dolor. Maecenas ullamcorper arcu placerat sem ornare, vitae mattis lacus hendrerit. Aliquam ultricies turpis libero, a lobortis purus ultricies sed. Aliquam sagittis dui lorem, ut varius tortor eleifend sed. Donec varius ut neque ut viverra.",
     img: "./images/products/waterproof.png",
-    size: ["xs", "s", "m"],
+    size: ["XS", "S", "M"],
     color: ["red", "black"],
   },
 ];
