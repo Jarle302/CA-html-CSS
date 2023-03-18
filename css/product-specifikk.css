@@ -27,7 +27,7 @@
 }
 
 .product-specific__img {
-  max-width: 65%;
+  max-width: 39%;
   margin: 40px 0 0 0;
 }
 
@@ -40,6 +40,30 @@
 .product-specific__p--name,
 .product-specific__p--price {
   margin: 0;
+}
+
+.comments {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.comment__p {
+  max-width: 40%;
+}
+.comment__span {
+  font-weight: bold;
+}
+
+.comments__h2 {
+  align-self: center;
+}
+
+hr {
+  width: 70%;
+  color: var(--button--orange);
+  align-self: flex-start;
 }
 
 @media screen and (min-width: 650px) {
@@ -122,6 +146,9 @@ input[type="radio"]:checked + label {
   flex-direction: column;
   align-items: center;
   gap: 5px;
+}
+.stars {
+  display: flex;
 }
 
 .popUp {

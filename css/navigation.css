@@ -41,6 +41,9 @@ footer {
   background-color: var(--header-footer);
 }
 
+footer a {
+  color: var(--small-text--black);
+}
 footer {
   display: flex;
   align-items: center;
@@ -151,7 +154,7 @@ nav a {
     display: inline-block;
   }
   nav a {
-    color: var(--heading-white);
+    color: var(--small-text--black);
   }
 
   .nav__icon--cart {

@@ -75,7 +75,7 @@
     grid-column: 2/5;
   }
 
-  .order-success__btn--home{
+  .order-success__btn--home {
     background-color: var(--background-grey);
   }
 

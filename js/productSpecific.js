@@ -49,4 +49,23 @@ document
   .querySelector("#addToCartButton")
   .addEventListener("click", () => addToCart(data, jacketIndex));
 
+fetch("https://jsonplaceholder.typicode.com/comments/").then((data) =>
+  data.json().then((data) => {
+    const comments = data
+      .slice(0, 10)
+      .map(
+        (data) =>
+          ` <h3 class="comment__h3">User: ${
+            data.email
+          }</h3> <div class="stars"> ${'<i class="fa-solid fa-star"></i>'.repeat(
+            Math.floor(Math.random() * 5)
+          )} </div> <p class="comment__p"> <span class="comment__span">Comment:</span> ${
+            data.body
+          }</p> <hr>`
+      )
+      .join("");
+    document.querySelector(".comments").innerHTML += comments;
+  })
+);
+
 console.log(cartInventory);
