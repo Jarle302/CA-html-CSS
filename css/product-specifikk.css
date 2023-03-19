@@ -12,6 +12,7 @@
 }
 
 .product-specific__div {
+  display: grid;
   position: relative;
   z-index: 1000;
   right: 0;

@@ -10,12 +10,15 @@
   color: var(--success-green);
   margin-top: 72px;
   font-size: 3rem;
+  grid-column: 2/5;
+  width: max-content;
 }
 
 .order-success__h2 {
   text-align: start;
   padding: 0 0 0 20px;
   margin-bottom: 2px;
+  font-size: 1.5rem;
 }
 
 .order-success__p,
@@ -43,6 +46,11 @@
 .order-success__btn--continue-shopping,
 .order-success__btn--home {
   color: var(--small-text--black);
+}
+
+.create-account {
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 @media screen and (min-width: 650px) {

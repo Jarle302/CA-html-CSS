@@ -20,6 +20,7 @@
 
 .checkout__section input {
   padding: 8px;
+  border-radius: 17px;
 }
 
 .checkout__form__div--first {
