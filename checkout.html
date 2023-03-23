@@ -37,6 +37,7 @@
       crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <script type="module" defer src="/js/shoppingCart.js"></script>
+    <script type="module" defer src="/js/checkout.js"></script>
   </head>
   <body>
     <header>
@@ -63,7 +64,7 @@
       <a href="your-order.html"
         ><i class="back-arrow fa-solid fa-arrow-left"></i
       ></a>
-      <form action="POST">
+      <form id="checkout" action="POST">
         <section class="checkout__section">
           <h1>Checkout</h1>
           <h2>Billing details</h2>
@@ -97,6 +98,7 @@
                 name="payment"
                 id="visa"
                 value="visa" />
+
               <label
                 id="visa-label"
                 class="checkout__form__label--visa"
@@ -153,7 +155,7 @@
                 <input type="number" name="cvc--checkout" id="cvc--checkout" />
               </fieldset>
             </div>
-            <a class="btn" href="/order-success.html">Checkout</a>
+            <button type="submit" class="btn">Checkout</button>
           </div>
         </section>
       </form>

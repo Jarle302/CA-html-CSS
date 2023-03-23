@@ -162,6 +162,7 @@ input[type="radio"]:checked + label {
   right: 30%;
   border: 1px solid black;
   padding-bottom: 28px;
+  border-radius: 15px;
 }
 
 .h3--popUp {
