@@ -5,7 +5,7 @@
 }
 .about__div--text {
   background: var(--background-grey);
-  max-width: 40%;
+  max-width: 65%;
   margin: 0 auto 20px;
   padding: 5% 10% 5% 10%;
   border-radius: 8px;
