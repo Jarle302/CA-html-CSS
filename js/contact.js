@@ -1,8 +1,9 @@
-import { validateInput } from "./checkout.js";
+import { validateInput } from "./validateForm.js";
 
 const testtwo = document.querySelector("#name--contact");
 validateInput(
   (value) => {
+    console.log(testtwo);
     return value.trim().length >= 2 ? true : false;
   },
   testtwo,
