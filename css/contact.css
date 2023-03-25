@@ -1,10 +1,17 @@
 main {
   display: flex;
   justify-content: center;
+  text-align: start;
+}
+
+h1,
+h2 {
+  text-align: start;
 }
 
 .content-container {
   padding: 0 85px;
+  flex: 1;
 }
 
 .contact__section--contact-info {
@@ -18,21 +25,22 @@ main {
   color: var(--small-text--black);
 }
 
-.contact__div--visit-us {
-  background-color: white;
-  padding: 5px;
+.contact__form__button {
+  margin: 15px 0;
+  width: max-content;
 }
 
 .form--contact {
   flex-direction: column;
   color: var(--heading-dark);
+  display: flex;
 }
 
-.form--container {
-  background-color: white;
+.contact__section--contact-info div {
+  width: max-content;
 }
 
-.form--container input {
+form input {
   padding: 11px 0;
 }
 
@@ -46,5 +54,6 @@ main {
       no-repeat right;
     background-size: cover;
     width: 100%;
+    flex: 1;
   }
 }
