@@ -1,46 +1,14 @@
+main {
+  padding: 40px;
+}
+
 .product-specific__container--buttons {
   display: flex;
-}
-
-.product-specific__section {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.product-specific__h1 {
-  margin: 92px 0 0 0;
-}
-
-.product-specific__div {
-  display: grid;
-  position: relative;
-  z-index: 1000;
-  right: 0;
-  top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 80px;
-  background-color: var(--background--light-grey);
-  max-width: 400px;
-  border-radius: 108px 0px 0px 108px;
-  float: right;
 }
 
 .product-specific__img {
   max-width: 39%;
   margin: 40px 0 0 0;
-}
-
-.product-specific__div--name-and-price {
-  align-self: flex-start;
-  font-size: 1.4rem;
-  margin-left: 20px;
-}
-
-.product-specific__p--name,
-.product-specific__p--price {
-  margin: 0;
 }
 
 .comments {
@@ -61,54 +29,21 @@
   align-self: center;
 }
 
-hr {
-  width: 70%;
-  color: var(--button--orange);
-  align-self: flex-start;
+.product-specific__div {
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: auto;
+  position: static;
+  max-width: 400px;
+  background: none;
+  float: none;
 }
 
-@media screen and (min-width: 650px) {
-  .product-specific__div {
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    position: static;
-    max-width: 400px;
-    background: none;
-    float: none;
-  }
-  .product-specific__main::after {
-    content: "";
-    background-color: var(--background--light-grey);
-    padding: 172% 53% 0% 20%;
-    clip-path: ellipse(80% 38% at 121% 76%);
-    z-index: -2;
-    position: relative;
-    bottom: -300px;
-    left: 27%;
-    bottom: 0;
-  }
-
-  .product-specific__main::before {
-    content: "";
-    background: url(/images/RainyDays_Logo.png) no-repeat;
-    padding: 40px;
-    background-size: contain;
-    min-height: 60px;
-    width: 200px;
-    position: absolute;
-    right: 0;
-    top: 289px;
-    z-index: 2000;
-    margin-right: 4%;
-  }
-
-  .product-specific__section {
-    right: 20%;
-    bottom: 0%;
-  }
+.product-specific__section {
+  right: 20%;
+  bottom: 0%;
 }
 
 input[type="radio"] {
@@ -131,7 +66,7 @@ input[type="radio"]:checked + label {
 .container--buttons {
   gap: 8px;
   display: flex;
-  padding: 14px;
+  padding: 14px 0;
 }
 
 .imgPopUp {
