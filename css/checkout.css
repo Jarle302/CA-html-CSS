@@ -1,21 +1,18 @@
 .checkout__section {
-  max-width: 303px;
+  max-width: 236px;
   margin: auto;
-  padding: 40px 20px;
-  background-color: var(--background--light-grey);
+  box-shadow: 5px 5px 10px;
+  border-radius: 20px;
+  padding: 40px;
+}
+.checkout__main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.checkout__fieldset--first,
-.checkout__fieldset--second {
+.checkout__fieldset--first {
   border: none;
-}
-
-.checkout__fieldset--first input {
-  background-color: var(--background-grey);
-}
-
-.checkout__fieldset--second input {
-  background-color: var(--background--light-grey);
 }
 
 .checkout__section input {
@@ -24,18 +21,8 @@
 }
 
 .checkout__form__div--first {
-  background-color: var(--background--light-grey);
-}
-
-.checkout__form__div--second {
-  background-color: var(--background-grey);
-  margin-bottom: 20px;
-}
-
-.checkout__div--second-background {
-  background-color: var(--background-grey);
-  width: 113%;
-  transform: translate(-6%, 10px);
+  display: flex;
+  flex-direction: column;
 }
 
 .checkout__form__input--radio {
@@ -55,40 +42,4 @@
 
 input[type="radio"]:checked + label {
   border: 2px solid var(--success-green);
-}
-
-@media screen and (min-width: 1000px) {
-  .checkout__section {
-    border-left: 10px solid var(--button--orange);
-    right: 23%;
-    position: relative;
-  }
-
-  .checkout__main::after {
-    position: absolute;
-    content: "";
-    height: 0;
-    width: 0;
-    border-right: 400px solid var(--background--light-grey);
-    border-top: 400px solid transparent;
-    border-bottom: 400px solid transparent;
-    float: right;
-
-    top: 108px;
-    right: 0;
-    z-index: -1;
-  }
-
-  .checkout__main::before {
-    content: "";
-    background: url(/images/RainyDays_Logo.png) no-repeat;
-    padding: 40px;
-    background-size: contain;
-    min-height: 60px;
-    width: 200px;
-    position: absolute;
-    right: 0;
-    top: 422px;
-    z-index: 2000;
-  }
 }
