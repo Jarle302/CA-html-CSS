@@ -10,7 +10,7 @@ h2 {
 }
 
 .content-container {
-  padding: 0 85px;
+  padding: 0 10px;
   flex: 1;
 }
 
@@ -49,6 +49,9 @@ form input {
     margin: 0;
   }
 
+  .content-container {
+    padding: 0 85px;
+  }
   .contact--background {
     background: url(../Backgrounds/thom-holmes-x1Knd2yopZI-unsplash-contact5.jpg)
       no-repeat right;
