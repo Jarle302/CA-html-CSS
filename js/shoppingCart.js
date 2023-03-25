@@ -191,8 +191,8 @@ function popUp(data, jacketIndex) {
   <img class="imgPopUp" src=${data[jacketIndex].img} alt=${data[jacketIndex].name} jacket>
 
   <div class="button--popUp">
-  <a href="product-list.html" class="btn">Continue shopping</a>
-  <a href="your-order.html" class="btn btn--second">Your order</a>
+  <a href="product-list.html" class="btn btn--second btn--small">Continue shopping</a>
+  <a href="your-order.html" class="btn btn--small">Your order</a>
   </div>
   </div>
     `;
