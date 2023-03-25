@@ -38,9 +38,11 @@ a {
 }
 
 fieldset {
-  border: solid orange 1px;
+  box-shadow: 1px 1px 0px;
   display: flex;
   flex-direction: column;
+  border: none;
+  border-radius: 14px;
 }
 
 /* Headings  */
