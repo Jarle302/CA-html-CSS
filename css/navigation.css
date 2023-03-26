@@ -86,6 +86,7 @@ nav ul {
 }
 
 nav li {
+  padding: 13px;
   border-radius: 12px;
 }
 
@@ -95,7 +96,6 @@ nav li {
 
 nav a {
   color: var(--small-text--black);
-  padding: 13px;
 }
 
 .shopping-cart {
