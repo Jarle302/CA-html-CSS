@@ -3,26 +3,26 @@ export const cartInventory = sessionStorage.getItem("cartInventory")
   : [];
 
 export function addToCart(data, index) {
-  let sizeSelect = document.querySelector("#Size").value
-    ? document.querySelector("#Size").value
+  let sizeSelect = document.querySelector(`#Size${index}`).value
+    ? document.querySelector(`#Size${index}`).value
     : "M";
-  let colorRadio = document.querySelector(`input[name="color"]:checked`)
-    ? document.querySelector('input[name="color"]:checked').value
+  let colorRadio = document.querySelector(`input[name="color${index}"]:checked`)
+    ? document.querySelector(`input[name="color${index}"]:checked`).value
     : "black";
 
   document
-    .querySelector("#Size")
+    .querySelector(`#Size${index}`)
     .addEventListener(
       "change",
-      () => (sizeSelect = document.querySelector("#Size").value)
+      () => (sizeSelect = document.querySelector(`#Size${index}`).value)
     );
 
-  document.querySelectorAll(`input[name="color"]`).forEach((button) => {
+  document.querySelectorAll(`input[name="color${index}]"`).forEach((button) => {
     button.addEventListener(
       "change",
       () =>
         (colorRadio = document.querySelector(
-          `input[name="color"]:checked`
+          `input[name="color${index}"]:checked`
         ).value)
     );
   });
@@ -169,7 +169,7 @@ document
     )
   );
 
-function popUp(data, jacketIndex) {
+export function popUp(data, jacketIndex) {
   document.querySelector(".popUp").innerHTML = `
   <div class="popUp--container">
       <button class="button--x" >X</button>

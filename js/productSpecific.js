@@ -15,8 +15,8 @@ function renderSpecific(data, index) {
             alt="${data[index].name} Jacket" />
           
 <div class="container--buttons" >
-<label for="Size">Size</label>
-          <select name="Size" id="Size">
+<label for=Size${index}>Size</label>
+          <select name=Size${index} id=Size${index}>
           ${data[index].size.map(
             (size) => `<option value=${size}>${size}</option>`
           )}            
@@ -24,8 +24,10 @@ function renderSpecific(data, index) {
           ${data[index].color
             .map(
               (color) => ` 
-            <input type="radio" class="input--radio" id="color--${color}" name="color" value="${color}" >
-<label class="label--radio" style="background-color:${color}" for="color--${color}"></label>`
+            <input type="radio" class="input--radio"  id="color--${color}${index}" name="color${index}" value="${color}" >
+<label class="label--radio" style="background-color:${color}" for="color--${color}${index}"> <span style="color:${
+                color === "black" ? "white" : "black"
+              }" }>${color} </span></label>`
             )
             .join("")}            
 </div>
