@@ -117,7 +117,7 @@ export function renderOrder(orderArr, domEl) {
     )
     .join("");
 
-  domEl.innerHTML += ` <hr></hr> <tr>
+  domEl.innerHTML += ` <tr>
   <td>Totall</td>
   <td>${cartInventory.reduce(
     (acc, cartInventory) => acc + cartInventory.price,
