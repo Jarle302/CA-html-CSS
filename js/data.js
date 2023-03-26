@@ -38,8 +38,8 @@ export const data = [
       "The Reliable rain jacket is a must-have for anyone who wants to stay dry in style. Its waterproof and windproof material will protect you from the elements, while its lightweight design won't weigh you down. The jacket is available in XS, S, and XL sizes, and comes in four trendy colors, black, pink, white, and purple.      ",
     img: "./images/products/reliable.png",
     size: ["XS", "S", "XL"],
-    color: ["black", "pink", "white", "purple"],
-    hexColor: ["#000000", "#ff69b4", "#ffffff", "#800080"],
+    color: ["black", "pink", "purple"],
+    hexColor: ["#000000", "#ff69b4", "#800080"],
   },
   {
     name: "Running",
@@ -48,8 +48,8 @@ export const data = [
       "The Running rain jacket is perfect for runners who don't want to let bad weather affect their training routine. Its breathable and waterproof material will keep you dry and comfortable, while its lightweight design won't slow you down. The jacket is available in XS, S, and M sizes, and comes in three colors, blue, black, and grey.",
     img: "./images/products/running.png",
     size: ["XS", "S", "M"],
-    color: ["blue", "black", "grey"],
-    hexColor: ["#0000ff", "#000000", "#808080"],
+    color: ["blue", "black"],
+    hexColor: ["#0000ff", "#000000"],
   },
   {
     name: "Shell",
