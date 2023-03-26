@@ -17,9 +17,10 @@ the color when getting black
 */
 
 // CODE GOTTEN FROM CHAT-GPT
+//spent alot of time to get it to work, but gpt started substring from 0-2 inluding the # which made it not work.
 
 export function getContrastColor(hexColor) {
-  const r = parseInt(hexColor.substr(0, 2), 16);
+  const r = parseInt(hexColor.substr(1, 2), 16);
   const g = parseInt(hexColor.substr(2, 2), 16);
   const b = parseInt(hexColor.substr(4, 2), 16);
 
