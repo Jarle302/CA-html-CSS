@@ -8,41 +8,46 @@ const jacketIndex = parameters.get("index");
 function renderSpecific(data, index) {
   document.querySelector(".product-specific__section").innerHTML = `
     <h1 class="product-specific__h1">${data[index].name}</h1>
-        <div class="product-specific__div">
+    <div class="product-specific--flex>    
+    <div class="product-specific__div">
           <img
             class="product-specific__img"
             src=${data[index].img}
             alt="${data[index].name} Jacket" />
           
-<div class="container--buttons" >
-<label for=Size${index}>Size</label>
-          <select name=Size${index} id=Size${index}>
-          ${data[index].size.map(
-            (size) => `<option value=${size}>${size}</option>`
-          )}            
-          </select>
-          ${data[index].color
-            .map(
-              (color) => ` 
-            <input type="radio" class="input--radio"  id="color--${color}${index}" name="color${index}" value="${color}" >
-<label class="label--radio" style="background-color:${color}" for="color--${color}${index}"> <span style="color:${
-                color === "black" ? "white" : "black"
-              }" }>${color} </span></label>`
-            )
-            .join("")}            
-</div>
-          <div class="product-specific__div--name-and-price">
-            <p class="product-specific__p--name">${data[index].name}</p>
-            <p class="product-specific__p--price">${data[index].price}$</p>
-          </div>
-          <div class="product-specific__container--buttons">
-          <a class="btn btn--second" href="your-order.html?index=${jacketIndex}"
-            >Your order</a
-          >
-          <button id="addToCartButton" class="btn product-specific__button--cta" href="your-order.html?index=${jacketIndex}"
-            >Add to Cart </button>
-            </div>
-        </div>`;
+
+        </div> <div> <div class="container--buttons" >
+        <label for=Size${index}>Size</label>
+                  <select name=Size${index} id=Size${index}>
+                  ${data[index].size.map(
+                    (size) => `<option value=${size}>${size}</option>`
+                  )}            
+                  </select>
+                  ${data[index].color
+                    .map(
+                      (color) => ` 
+                    <input type="radio" class="input--radio"  id="color--${color}${index}" name="color${index}" value="${color}" >
+        <label class="label--radio" style="background-color:${color}" for="color--${color}${index}"> <span style="color:${
+                        color === "black" ? "white" : "black"
+                      }" }>${color} </span></label>`
+                    )
+                    .join("")}            
+        </div>
+                  <div class="product-specific__div--name-and-price">
+                    <p class="product-specific__p--price">${
+                      data[index].price
+                    }$</p>
+                  </div>
+                  <div class="product-specific__container--buttons">
+                  <a class="btn btn--second" href="your-order.html?index=${jacketIndex}"
+                    >Your order</a
+                  >
+                  <button id="addToCartButton" class="btn product-specific__button--cta" href="your-order.html?index=${jacketIndex}"
+                    >Add to Cart </button>
+                    
+                    </div> <h3>Description</h3> <p>${
+                      data[index].description
+                    }</p></div> </div> </div>`;
 }
 
 renderSpecific(data, jacketIndex);

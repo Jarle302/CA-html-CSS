@@ -20,14 +20,7 @@ function renderList({ name, price, img }, index) {
             (size) => `<option value=${size}>${size}</option>`
           )}            
           </select>
-          ${data[index].color
-            .map(
-              (color) => ` 
-            <input type="radio" class="input--radio" id="color--${color}${index}" name="color${index}" value="${color}" >
-            <label class="label--radio" style="background-color:${color}" for="color--${color}${index}"> <span style="color:${getContrastColor}
-              }" }>${color} </span></label>`
-            )
-            .join("")}            
+          ${fixColors(data, index, data[index].color)}            
 </div>
         </form>
         <p class="card__p--price">${price}$</p>
@@ -45,3 +38,16 @@ document
   .forEach((button, index) =>
     button.addEventListener("click", () => addToCart(data, index))
   );
+
+function fixColors(data, number, colorArr) {
+  return colorArr
+    .map(
+      (color, index) =>
+        ` 
+  <input type="radio" class="input--radio" id="color--${color}${number}" name="color${number}" value="${color}" >
+  <label class="label--radio" style="background-color:${color}" for="color--${color}${number}"> <span style="color:${getContrastColor(
+          data[number].hexColor[index]
+        )}">${color}</span></label>`
+    )
+    .join("");
+}

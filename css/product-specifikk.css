@@ -2,6 +2,13 @@ main {
   padding: 40px;
 }
 
+.product-specific--flex {
+  display: flex;
+}
+
+.product-specific--flex h3 {
+  text-align: start;
+}
 .product-specific__container--buttons {
   display: flex;
 }
