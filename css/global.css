@@ -98,7 +98,8 @@ h1 {
   min-width: max-content;
 }
 
-.btn:hover {
+.btn:hover,
+.btn--list:hover {
   background-color: #a75723;
 }
 
