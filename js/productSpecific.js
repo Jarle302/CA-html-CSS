@@ -41,9 +41,7 @@ function renderSpecific(data, index) {
                     }$</p>
                   </div>
                   <div class="product-specific__container--buttons">
-                  <a class="btn btn--second" href="your-order.html?index=${jacketIndex}"
-                    >Your order</a
-                  >
+                 
                   <button id="addToCartButton" class="btn product-specific__button--cta" href="your-order.html?index=${jacketIndex}"
                     >Add to Cart </button>
                     
