@@ -12,12 +12,7 @@ validateInput(
 
 validateInput(
   (value) => {
-    if (
-      /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/.test(value) ||
-      /^([a-z0-9_\.\+-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(value)
-    ) {
-      return true;
-    } else return false;
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ? true : false;
   },
   document.querySelector("#email--contact"),
   "please input a valid email"
