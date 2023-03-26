@@ -5,11 +5,11 @@ import { getContrastColor } from "./GOTTENFROMCHATGPTcontrastfriendlyColor.js";
 function renderList({ name, price, img }, index) {
   document.querySelector(".product-list__section").innerHTML += ` 
     <div class="product-list__card">
-    <div class="product-list--image-container">
+    <a href="/product-specifikk.html?index=${index}" class="product-list--image-container">
       <img
         src=${img}
         alt="${name} jacket" />
-        </div>
+        </a>
       <div class="product-list__div--name-and-price">
         <p class="card__p--product-name">${name}</p>
         <form>

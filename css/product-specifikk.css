@@ -7,6 +7,8 @@ main {
 }
 .product-specific__div {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 h3 {
@@ -52,8 +54,9 @@ h3 {
 }
 
 .product-specific__section {
-  right: 20%;
-  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .container--buttons {
@@ -99,4 +102,13 @@ h3 {
 }
 
 @media screen and (min-width: 650px) {
+  .product-specific__section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .product-specific__div {
+    max-width: 35%;
+  }
 }
