@@ -73,6 +73,7 @@
 
 @media screen and (min-width: 650px) {
   .product-list__section {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -82,7 +83,7 @@
   }
 }
 
-@media screen and (min-width: 833px) {
+@media screen and (min-width: 1300px) {
   .product-list__section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
