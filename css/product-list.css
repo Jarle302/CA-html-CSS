@@ -45,7 +45,7 @@
   display: flex;
   justify-content: center;
   background: #969696;
-  width: 200px;
+  max-width: 200px;
   padding: 12px;
   flex: 1;
   background-image: linear-gradient(to top, #2e2e2e 0%, #efefef 100%);
