@@ -1,9 +1,10 @@
 .product-list__section {
-  display: grid;
-  grid-template-columns: 1fr;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 20px;
 }
-
 .product-list__h1--our-jackets {
   background: url(/Backgrounds/nicolas-hans-E_uiydH6c5I-unsplash.jpg) no-repeat
     center;
