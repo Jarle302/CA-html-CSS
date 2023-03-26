@@ -13,6 +13,7 @@ main {
 
 h3 {
   text-align: start;
+  font-size: 0.8rem;
 }
 
 .product-specific--description {
@@ -36,13 +37,10 @@ h3 {
 
 .comments {
   display: flex;
-  flex-direction: column;
   align-items: start;
+  flex-direction: column;
 }
 
-.comment__p {
-  max-width: 40%;
-}
 .comment__span {
   font-weight: bold;
 }
@@ -99,6 +97,10 @@ h3 {
 @media screen and (min-width: 650px) {
   main {
     padding: 40px;
+  }
+
+  .comment__p {
+    max-width: 40%;
   }
 
   .product-specific__section {
