@@ -127,10 +127,6 @@ input[type="radio"] {
   border-radius: 5px;
 }
 
-select {
-  padding: 8px 0px;
-}
-
 input[type="radio"]:checked + label {
   border: solid 2px orange;
 }

@@ -48,6 +48,7 @@
   padding: 12px;
   flex: 1;
   background-image: linear-gradient(to top, #2e2e2e 0%, #efefef 100%);
+  border-radius: 5px 0 0 5px;
 }
 
 .product-list__div--name-and-price p {
@@ -55,11 +56,11 @@
 }
 
 .card__p--product-name {
-  margin: 5px 0 0 8px;
+  margin: 5px;
 }
 
 .card__p--price {
-  margin: 0 0 5px 8px;
+  margin: 5px;
 }
 
 .label--radio {
@@ -71,7 +72,19 @@
 
 @media screen and (min-width: 650px) {
   .product-list__section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-list__h1--our-jackets {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}
+
+@media screen and (min-width: 833px) {
+  .product-list__section {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .product-list__h1--our-jackets {
@@ -80,14 +93,6 @@
   }
 }
 
-@media screen and (min-width: 833px) {
-  .product-list__section {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-
-  .product-list__h1--our-jackets {
-    grid-column: 1/5;
-    grid-row: 1/2;
-  }
+label {
+  margin: 5px;
 }
