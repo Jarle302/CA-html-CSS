@@ -1,8 +1,22 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .your-order__section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin: auto;
+}
+
+.back-arrow {
+  color: #000000;
+  padding: 10px;
+  position: fixed;
+  top: 11%;
+  z-index: 3000;
+  left: 7px;
 }
 
 .small-image {
@@ -61,19 +75,5 @@ td {
     right: 0;
     top: 317px;
     z-index: 2000;
-  }
-
-  .your-order__main::after {
-    content: "";
-    height: 0;
-    width: 0;
-    border-right: 400px solid var(--background--light-grey);
-    border-top: 400px solid transparent;
-    border-bottom: 400px solid transparent;
-    float: right;
-
-    top: 58px;
-    right: 0;
-    z-index: -1;
   }
 }

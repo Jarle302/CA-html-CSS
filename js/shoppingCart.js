@@ -102,12 +102,17 @@ export function removeFromCart(event, item, domEl) {
 export function renderOrder(orderArr, domEl) {
   domEl.innerHTML = orderArr
     .map(
-      (jacket) => `<tr>
+      (jacket) => `<div class="order__div" >
+    <tr>
   <td>${jacket.name}</td>
   <td>${jacket.price}$</td>
-  <td><img class="small-image" src=${jacket.img} alt=${jacket.name} jacket></td>
+  <td> ${jacket.size}<td>
+  <td>${jacket.color}<td>
+  <img class="small-image" src=${jacket.img} alt=${jacket.name} jacket></td>
 <td> <button data-key=${jacket.key} class="removeFromCart">Remove</button> </td>
 </tr>
+</div>
+
  `
     )
     .join("");
@@ -202,3 +207,14 @@ export function popUp(data, jacketIndex) {
   });
   console.log(data);
 }
+
+/*
+document
+  .querySelectorAll(".color--div")
+  .forEach(
+    (element, index) =>
+      (element.style.backgroundColor = JSON.parse(
+        sessionStorage.getItem("cartInventory")[index].color
+      ))
+  );
+*/

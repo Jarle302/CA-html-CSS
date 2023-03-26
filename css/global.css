@@ -164,3 +164,6 @@ input[type="radio"]:checked + label {
   border-radius: 15px;
   min-width: 224px;
 }
+.color--div {
+  padding: px;
+}
