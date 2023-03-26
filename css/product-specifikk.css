@@ -2,8 +2,25 @@ main {
   padding: 40px;
 }
 
-.product-specific--flex {
+.product-specific__h1 {
+  flex-basis: 100%;
+}
+.product-specific__div {
+  flex: 1;
+}
+
+h3 {
+  text-align: start;
+}
+
+.product-specific--description {
+  max-width: 500px;
+}
+
+.product-specific--second-col {
   display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .product-specific--flex h3 {
@@ -11,10 +28,6 @@ main {
 }
 .product-specific__container--buttons {
   display: flex;
-}
-
-.product-specific__img {
-  max-width: 39%;
 }
 
 .comments {
@@ -36,15 +49,6 @@ main {
 }
 
 .product-specific__div {
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin: auto;
-  position: static;
-  max-width: 400px;
-  background: none;
-  float: none;
 }
 
 .product-specific__section {
@@ -92,4 +96,7 @@ main {
 
 .h3--popUp {
   color: green;
+}
+
+@media screen and (min-width: 650px) {
 }

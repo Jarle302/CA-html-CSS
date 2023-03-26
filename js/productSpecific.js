@@ -8,15 +8,17 @@ const jacketIndex = parameters.get("index");
 function renderSpecific(data, index) {
   document.querySelector(".product-specific__section").innerHTML = `
     <h1 class="product-specific__h1">${data[index].name}</h1>
-    <div class="product-specific--flex>    
     <div class="product-specific__div">
           <img
             class="product-specific__img"
             src=${data[index].img}
             alt="${data[index].name} Jacket" />
-          
-
-        </div> <div> <div class="container--buttons" >
+        </div>
+        
+        <div class="product-specific--second-col">
+        <h3> Description </h3>
+        <p class="product-specific--description">${data[index].description}</p>
+        <div class="container--buttons" >
         <label for=Size${index}>Size</label>
                   <select name=Size${index} id=Size${index}>
                   ${data[index].size.map(
@@ -45,9 +47,7 @@ function renderSpecific(data, index) {
                   <button id="addToCartButton" class="btn product-specific__button--cta" href="your-order.html?index=${jacketIndex}"
                     >Add to Cart </button>
                     
-                    </div> <h3>Description</h3> <p>${
-                      data[index].description
-                    }</p></div> </div> </div>`;
+                   </div></div>`;
 }
 
 renderSpecific(data, jacketIndex);
