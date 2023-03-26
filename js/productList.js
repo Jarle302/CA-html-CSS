@@ -39,7 +39,7 @@ document
     button.addEventListener("click", () => addToCart(data, index))
   );
 
-function fixColors(data, number, colorArr) {
+export function fixColors(data, number, colorArr) {
   return colorArr
     .map(
       (color, index) =>
