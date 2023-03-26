@@ -102,7 +102,7 @@ export function removeFromCart(event, item, domEl) {
 export function renderOrder(orderArr, domEl) {
   domEl.innerHTML = orderArr
     .map(
-      (jacket, index) => `<div class="order__div" >
+      (jacket, index) => `
     <tr style="background-color:${index % 2 ? "grey" : "white"}">
   <td>${jacket.name}</td> <td>  <img class="small-image" src=${
         jacket.img
@@ -110,16 +110,11 @@ export function renderOrder(orderArr, domEl) {
         jacket.key
       } class="removeFromCart">Remove</button> </td>
   </tr>
-  </td>
   <tr style="background-color:${index % 2 ? "grey" : "white"}">
   <td>${jacket.price}$</td>
-  <td> ${jacket.size}<td>
-  <td>${jacket.color}<td>
-
-</tr>
-</div>
-
- `
+  <td> ${jacket.size}</td>
+  <td>${jacket.color}</td>
+</tr>`
     )
     .join("");
 
