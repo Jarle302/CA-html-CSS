@@ -4,9 +4,9 @@ const queryString = document.location.search;
 const parameters = new URLSearchParams(queryString);
 const jacketIndex = parameters.get("index");
 
-document.querySelector(
-  ".back-arrow"
-).href = `../product-specifikk.html?index=${jacketIndex}`;
+document.querySelector(".back-arrow").href = jacketIndex
+  ? `../product-specifikk.html?index=${jacketIndex}`
+  : `../product-list.html`;
 
 const orderList = document.querySelector("#table--your-order");
 
