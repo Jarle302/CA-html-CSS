@@ -96,6 +96,7 @@ nav li {
 
 nav a {
   color: var(--small-text--black);
+  display: flex;
 }
 
 .shopping-cart {
@@ -149,6 +150,7 @@ nav a {
     right: 93px;
     position: fixed;
     top: 0px;
+    width: revert;
   }
 
   nav li {
@@ -156,6 +158,7 @@ nav a {
   }
   nav a {
     color: var(--small-text--black);
+    display: inline;
   }
 
   .nav__icon--cart {
