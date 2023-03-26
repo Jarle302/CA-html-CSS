@@ -198,7 +198,7 @@ export function popUp(data, jacketIndex) {
 
   <div class="button--popUp">
   <a href="product-list.html" class="btn btn--second btn--small">Continue shopping</a>
-  <a href="your-order.html?index=${jacketIndex}" class="btn btn--small">Your order</a>
+  <a href="your-order.html?index=${jacketIndex}" class="btn btn--small">Your Cart</a>
   </div>
   </div>
     `;

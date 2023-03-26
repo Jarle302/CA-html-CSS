@@ -56,10 +56,11 @@ footer {
 
 nav {
   padding: 8vh 3vh;
-  background: var(--background-grey);
+  background: #b1b1b1fa;
   right: 0;
   position: absolute;
   top: 0px;
+  width: 100%;
 }
 #hamburger-menu {
   z-index: 2000;
