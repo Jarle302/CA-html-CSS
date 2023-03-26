@@ -75,4 +75,6 @@ fetch("https://jsonplaceholder.typicode.com/comments/").then((data) =>
   })
 );
 
+document.querySelector("input[type=radio]").checked = true;
+
 console.log(cartInventory);
