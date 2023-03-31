@@ -62,23 +62,31 @@ function renderSpecific({
                     >Add to Cart </button>
                     
                    </div>  <p></p></div> <div><h3>Product info</h3>${description}</div>`;
-}
 
-if (document.querySelector("#addToCartButton"))
   document
-    .querySelector("#addToCartButton")
-    .addEventListener("click", () =>
-      addToCart(
-        name,
-        description,
-        on_sale,
-        prices,
-        images,
-        attributes,
-        id,
-        jacketIndex
+    .querySelector(`#Size${id}`)
+    .addEventListener(
+      "change",
+      () => (sizeSelect = document.querySelector(`#Size${id}`).value)
+    );
+
+  document.querySelectorAll(`input[name="color${id}]"`).forEach((button) => {
+    button.addEventListener("change", () =>
+      console.log("changed")(
+        (colorRadio = document.querySelector(
+          `input[name="color${id}"]:checked`
+        ).value)
       )
     );
+  });
+
+  if (document.querySelector("#addToCartButton"))
+    document
+      .querySelector("#addToCartButton")
+      .addEventListener("click", () => addToCart(name, on_sale, prices, id));
+  if (document.querySelector("input[type=radio]"))
+    document.querySelector("input[type=radio]").checked = true;
+}
 
 fetch("https://jsonplaceholder.typicode.com/comments/").then((data) =>
   data.json().then((data) => {
@@ -98,8 +106,5 @@ fetch("https://jsonplaceholder.typicode.com/comments/").then((data) =>
     document.querySelector(".comments").innerHTML += comments;
   })
 );
-
-if (document.querySelector("input[type=radio]"))
-  document.querySelector("input[type=radio]").checked = true;
 
 console.log(cartInventory);

@@ -4,7 +4,7 @@ import { getItems, baseUrl } from "./imports.js";
 
 getItems(baseUrl, renderList);
 
-function renderList({ name, prices, images, on_sale, id }, index) {
+function renderList({ name, prices, images, on_sale, attributes, id }, index) {
   document.querySelector(".product-list__section").innerHTML += ` 
     <div class="product-list__card">
     <a href="../product-specifikk.html?id=${id}" class="product-list--image-container">
@@ -12,6 +12,29 @@ function renderList({ name, prices, images, on_sale, id }, index) {
         src=${images[0].src}
         alt="${name} jacket" />
         </a>
+        <form>
+        <div class="container--buttons" >
+        <label for=Size${id}>Size</label>
+                  <select name=Size${id} id=Size${id}>
+                  ${attributes[1].terms.map(
+                    (size) => `<option value=${size.name}>${size.name}</option>`
+                  )}            
+                  </select>
+                  ${attributes[0].terms
+                    .map(
+                      (color) => ` 
+                    <input type="radio" class="input--radio"  id="color--${
+                      color.name
+                    }${id}" name="color${id}" value="${color}" >
+        <label class="label--radio" style="background-color:${
+          color.name
+        }" for="color--${color.name}${id}"> <span style="color:${
+                        color === "black" ? "white" : "black"
+                      }" }>${color.name} </span></label>`
+                    )
+                    .join("")}            
+        </div>
+        </form>
       <div class="product-list__div--name-and-price">
         <p class="card__p--product-name">${name}</p>
       
@@ -23,13 +46,31 @@ function renderList({ name, prices, images, on_sale, id }, index) {
       </div>
     </div>
   `;
-}
+  document
+    .querySelector(`#Size${id}`)
+    .addEventListener(
+      "change",
+      () => (sizeSelect = document.querySelector(`#Size${id}`).value)
+    );
 
-document
-  .querySelectorAll(".product-list__button--add-to-cart")
-  .forEach((button, index) =>
-    button.addEventListener("click", () => addToCart(data, index))
-  );
+  document.querySelectorAll(`input[name="color${id}]"`).forEach((button) => {
+    button.addEventListener(
+      "change",
+      () =>
+        (colorRadio = document.querySelector(
+          `input[name="color${id}"]:checked`
+        ).value)
+    );
+  });
+
+  document
+    .querySelectorAll(".product-list__button--add-to-cart")
+    .forEach((button, index) =>
+      button.addEventListener("click", () =>
+        addToCart(name, on_sale, prices, id)
+      )
+    );
+}
 
 export function fixColors(data, number, colorArr) {
   return colorArr

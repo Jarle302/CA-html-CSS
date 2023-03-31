@@ -2,35 +2,16 @@ export const cartInventory = sessionStorage.getItem("cartInventory")
   ? JSON.parse(sessionStorage.getItem("cartInventory"))
   : [];
 
-export function addToCart({ name, on_sale, prices, id }) {
-  let sizeSelect = document.querySelector(`#Size${id}`).value
-    ? document.querySelector(`#Size${id}`).value
-    : "M";
-  let colorRadio = document.querySelector(`input[name="color${id}"]:checked`)
-    ? document.querySelector(`input[name="color${id}"]:checked`).value
-    : "black";
+export function addToCart(name, on_sale, prices, id) {
+  console.log({ name, prices, id, on_sale });
 
-  document
-    .querySelector(`#Size${index}`)
-    .addEventListener(
-      "change",
-      () => (sizeSelect = document.querySelector(`#Size${index}`).value)
-    );
-
-  document.querySelectorAll(`input[name="color${id}]"`).forEach((button) => {
-    button.addEventListener(
-      "change",
-      () =>
-        (colorRadio = document.querySelector(
-          `input[name="color${id}"]:checked`
-        ).value)
-    );
-  });
+  let sizeSelect = "";
+  let colorRadio = "";
 
   cartInventory.push({
     name: name,
     price: !on_sale ? prices.regular_price : prices.sale_price,
-    key: `${data[index].name}-${cartInventory.length + 1}`,
+    key: `${name}-${cartInventory.length + 1}`,
     color: `${colorRadio}`,
     size: `${sizeSelect}`,
   });
