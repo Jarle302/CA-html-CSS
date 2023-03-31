@@ -2,12 +2,12 @@ export const cartInventory = sessionStorage.getItem("cartInventory")
   ? JSON.parse(sessionStorage.getItem("cartInventory"))
   : [];
 
-export function addToCart(data, index) {
-  let sizeSelect = document.querySelector(`#Size${index}`).value
-    ? document.querySelector(`#Size${index}`).value
+export function addToCart({ name, on_sale, prices, id }) {
+  let sizeSelect = document.querySelector(`#Size${id}`).value
+    ? document.querySelector(`#Size${id}`).value
     : "M";
-  let colorRadio = document.querySelector(`input[name="color${index}"]:checked`)
-    ? document.querySelector(`input[name="color${index}"]:checked`).value
+  let colorRadio = document.querySelector(`input[name="color${id}"]:checked`)
+    ? document.querySelector(`input[name="color${id}"]:checked`).value
     : "black";
 
   document
@@ -17,18 +17,19 @@ export function addToCart(data, index) {
       () => (sizeSelect = document.querySelector(`#Size${index}`).value)
     );
 
-  document.querySelectorAll(`input[name="color${index}]"`).forEach((button) => {
+  document.querySelectorAll(`input[name="color${id}]"`).forEach((button) => {
     button.addEventListener(
       "change",
       () =>
         (colorRadio = document.querySelector(
-          `input[name="color${index}"]:checked`
+          `input[name="color${id}"]:checked`
         ).value)
     );
   });
 
   cartInventory.push({
-    ...data[index],
+    name: name,
+    price: !on_sale ? prices.regular_price : prices.sale_price,
     key: `${data[index].name}-${cartInventory.length + 1}`,
     color: `${colorRadio}`,
     size: `${sizeSelect}`,

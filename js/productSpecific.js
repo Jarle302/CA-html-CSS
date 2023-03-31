@@ -1,58 +1,84 @@
 import { data } from "./data.js";
 import { addToCart, cartInventory } from "./shoppingCart.js";
+import { getItems, baseUrl } from "./imports.js";
 
 const queryString = document.location.search;
 const parameters = new URLSearchParams(queryString);
-const jacketIndex = parameters.get("index");
+const jacketIndex = parameters.get("id");
+console.log(jacketIndex);
+getItems(baseUrl + "/" + jacketIndex, renderSpecific);
 
-function renderSpecific(data, index) {
+function renderSpecific({
+  name,
+  description,
+  short_description,
+  on_sale,
+  prices,
+  images,
+  attributes,
+  id,
+}) {
   document.querySelector(".product-specific__section").innerHTML = `
-    <h1 class="product-specific__h1">${data[index].name}</h1>
+    <h1 class="product-specific__h1">${name}</h1>
     <div class="product-specific__div">
           <img
             class="product-specific__img"
-            src=${data[index].img}
-            alt="${data[index].name} Jacket" />
+            src=${images[0].src}
+            alt="${name} Jacket" />
         </div>
         
         <div class="product-specific--second-col">
         <h3> Description </h3>
-        <p class="product-specific--description">${data[index].description}</p>
+        <p class="product-specific--description">${description}</p>
         <div class="container--buttons" >
-        <label for=Size${index}>Size</label>
-                  <select name=Size${index} id=Size${index}>
-                  ${data[index].size.map(
-                    (size) => `<option value=${size}>${size}</option>`
+        <label for=Size${id}>Size</label>
+                  <select name=Size${id} id=Size${id}>
+                  ${attributes[1].terms.map(
+                    (size) => `<option value=${size.name}>${size.name}</option>`
                   )}            
                   </select>
-                  ${data[index].color
+                  ${attributes[0].terms
                     .map(
                       (color) => ` 
-                    <input type="radio" class="input--radio"  id="color--${color}${index}" name="color${index}" value="${color}" >
-        <label class="label--radio" style="background-color:${color}" for="color--${color}${index}"> <span style="color:${
+                    <input type="radio" class="input--radio"  id="color--${
+                      color.name
+                    }${id}" name="color${id}" value="${color}" >
+        <label class="label--radio" style="background-color:${
+          color.name
+        }" for="color--${color.name}${id}"> <span style="color:${
                         color === "black" ? "white" : "black"
-                      }" }>${color} </span></label>`
+                      }" }>${color.name} </span></label>`
                     )
                     .join("")}            
         </div>
                   <div class="product-specific__div--name-and-price">
                     <p class="product-specific__p--price">${
-                      data[index].price
-                    }$</p>
+                      !on_sale ? prices.regular_price : prices.sale_price
+                    }${prices.currency_code}</p>
                   </div>
                   <div class="product-specific__container--buttons">
                  
-                  <button id="addToCartButton" class="btn product-specific__button--cta" href="your-order.html?index=${jacketIndex}"
+                  <button id="addToCartButton" class="btn product-specific__button--cta" href="your-order.html?id=${jacketIndex}"
                     >Add to Cart </button>
                     
                    </div></div>`;
 }
 
-renderSpecific(data, jacketIndex);
-
-document
-  .querySelector("#addToCartButton")
-  .addEventListener("click", () => addToCart(data, jacketIndex));
+if (document.querySelector("#addToCartButton"))
+  document
+    .querySelector("#addToCartButton")
+    .addEventListener("click", () =>
+      addToCart(
+        name,
+        description,
+        on_sale,
+        prices,
+        images,
+        attributes,
+        id,
+        jacketIndex
+      )
+    );
 
 fetch("https://jsonplaceholder.typicode.com/comments/").then((data) =>
   data.json().then((data) => {
@@ -73,6 +99,7 @@ fetch("https://jsonplaceholder.typicode.com/comments/").then((data) =>
   })
 );
 
-document.querySelector("input[type=radio]").checked = true;
+if (document.querySelector("input[type=radio]"))
+  document.querySelector("input[type=radio]").checked = true;
 
 console.log(cartInventory);
