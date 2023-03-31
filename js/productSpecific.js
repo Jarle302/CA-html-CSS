@@ -29,7 +29,7 @@ function renderSpecific({
         
         <div class="product-specific--second-col">
         <h3> Description </h3>
-        <p class="product-specific--description">${description}</p>
+        <p class="product-specific--description">${short_description}</p>
         <div class="container--buttons" >
         <label for=Size${id}>Size</label>
                   <select name=Size${id} id=Size${id}>
@@ -61,7 +61,7 @@ function renderSpecific({
                   <button id="addToCartButton" class="btn product-specific__button--cta" href="your-order.html?id=${jacketIndex}"
                     >Add to Cart </button>
                     
-                   </div></div>`;
+                   </div>  <p></p></div> <div><h3>Product info</h3>${description}</div>`;
 }
 
 if (document.querySelector("#addToCartButton"))
