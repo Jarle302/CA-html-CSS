@@ -14,6 +14,7 @@ export function addToCart(name, on_sale, prices, id) {
     key: `${name}-${cartInventory.length + 1}`,
     color: `${colorRadio}`,
     size: `${sizeSelect}`,
+    img: images[0].src,
   });
   sessionStorage.setItem("cartInventory", JSON.stringify(cartInventory));
 

@@ -83,7 +83,9 @@ function renderSpecific({
   if (document.querySelector("#addToCartButton"))
     document
       .querySelector("#addToCartButton")
-      .addEventListener("click", () => addToCart(name, on_sale, prices, id));
+      .addEventListener("click", () =>
+        addToCart(name, images, on_sale, prices, id)
+      );
   if (document.querySelector("input[type=radio]"))
     document.querySelector("input[type=radio]").checked = true;
 }

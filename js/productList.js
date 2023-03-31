@@ -67,7 +67,7 @@ function renderList({ name, prices, images, on_sale, attributes, id }, index) {
     .querySelectorAll(".product-list__button--add-to-cart")
     .forEach((button, index) =>
       button.addEventListener("click", () =>
-        addToCart(name, on_sale, prices, id)
+        addToCart(name, images, on_sale, prices, id)
       )
     );
 }
