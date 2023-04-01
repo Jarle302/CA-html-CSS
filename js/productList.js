@@ -1,8 +1,6 @@
 import { addToCart, cartInventory, popUp } from "./shoppingCart.js";
 import { getContrastColor } from "./GOTTENFROMCHATGPTcontrastfriendlyColor.js";
 import { getItems, baseUrl } from "./imports.js";
-const sizeSelect = "";
-const colorRadio = "";
 getItems(
   baseUrl,
   renderList,
@@ -30,7 +28,7 @@ function renderList({ name, prices, images, on_sale, attributes, id }) {
                       (color) => ` 
                     <input type="radio" class="input--radio"  id="color--${
                       color.name
-                    }${id}" name="color${id}" value="${color}" >
+                    }${id}" name="color${id}" value="${color.name}" >
         <label class="label--radio" style="background-color:${
           color.name
         }" for="color--${color.name}${id}"> <span style="color:${
@@ -42,11 +40,12 @@ function renderList({ name, prices, images, on_sale, attributes, id }) {
         </form>
       <div class="product-list__div--name-and-price">
         <p class="card__p--product-name">${name}</p>
-      
-        <p class="card__p--price">${
-          !on_sale ? prices.regular_price : prices.sale_price
-        }${prices.currency_code}</p>
-        <button id="addToCartButton${id}" class="product-list__button--add-to-cart btn--list">Add to cart</button>
+              <p class="card__p--price">${
+                !on_sale ? prices.regular_price : prices.sale_price
+              }${prices.currency_code}</p>
+        <button data-key=${name}-${
+    cartInventory.length
+  }  id="addToCartButton${id}" class="product-list__button--add-to-cart btn--list">Add to cart</button>
         <a class="btn--list btn--second" href="../product-specifikk.html?id=${id}">Read more</a>
       </div>
     </div>
@@ -86,13 +85,13 @@ function addListener({ name, images, on_sale, prices, id }) {
       () => (sizeSelect = document.querySelector(`#Size${id}`).value)
     );
 
-  document.querySelectorAll(`input[name="color${id}]"`).forEach((button) => {
-    button.addEventListener(
-      "change",
-      () =>
+  document.querySelectorAll(`input[name=color${id}]`).forEach((button) => {
+    button.addEventListener("change", (e) =>
+      console.log(e.target.value)(
         (colorRadio = document.querySelector(
-          `input[name="color${id}"]:checked`
+          `input[name=color${id}]:checked`
         ).value)
+      )
     );
   });
 

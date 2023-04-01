@@ -42,7 +42,7 @@ function renderSpecific({
                       (color) => ` 
                     <input type="radio" class="input--radio"  id="color--${
                       color.name
-                    }${id}" name="color${id}" value="${color}" >
+                    }${id}" name="color${id}" value="${color.name}" >
         <label class="label--radio" style="background-color:${
           color.name
         }" for="color--${color.name}${id}"> <span style="color:${
@@ -62,23 +62,6 @@ function renderSpecific({
                     >Add to Cart </button>
                     
                    </div>  <p></p></div> <div><h3>Product info</h3>${description}</div>`;
-
-  document
-    .querySelector(`#Size${id}`)
-    .addEventListener(
-      "change",
-      () => (sizeSelect = document.querySelector(`#Size${id}`).value)
-    );
-
-  document.querySelectorAll(`input[name="color${id}]"`).forEach((button) => {
-    button.addEventListener("change", () =>
-      console.log("changed")(
-        (colorRadio = document.querySelector(
-          `input[name="color${id}"]:checked`
-        ).value)
-      )
-    );
-  });
 
   if (document.querySelector("#addToCartButton"))
     document

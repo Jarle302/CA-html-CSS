@@ -4,16 +4,15 @@ export const cartInventory = sessionStorage.getItem("cartInventory")
 
 export function addToCart(name, images, on_sale, prices, id) {
   console.log({ name, images, on_sale, prices, id });
-
   let sizeSelect = "";
   let colorRadio = "";
 
   cartInventory.push({
     name: name,
     price: !on_sale ? prices.regular_price : prices.sale_price,
-    key: `${name}-${cartInventory.length + 1}`,
-    color: `${colorRadio}`,
-    size: `${sizeSelect}`,
+    key: `${name}-${cartInventory.length}`,
+    color: document.querySelector(`input[name="color${id}"]:checked`).value,
+    size: document.querySelector(`#Size${id}`).value,
     img: images[0].src,
     id: id,
   });
