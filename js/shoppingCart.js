@@ -2,8 +2,8 @@ export const cartInventory = sessionStorage.getItem("cartInventory")
   ? JSON.parse(sessionStorage.getItem("cartInventory"))
   : [];
 
-export function addToCart(name, on_sale, prices, id) {
-  console.log({ name, prices, id, on_sale });
+export function addToCart(name, images, on_sale, prices, id) {
+  console.log({ name, images, on_sale, prices, id });
 
   let sizeSelect = "";
   let colorRadio = "";
@@ -15,6 +15,7 @@ export function addToCart(name, on_sale, prices, id) {
     color: `${colorRadio}`,
     size: `${sizeSelect}`,
     img: images[0].src,
+    id: id,
   });
   sessionStorage.setItem("cartInventory", JSON.stringify(cartInventory));
 
@@ -38,11 +39,11 @@ export function addToCart(name, on_sale, prices, id) {
       )
     );
   const test = JSON.parse(sessionStorage.getItem("cartInventory"));
-  console.log(test, cartInventory, index);
 
   popUp(
-    JSON.parse(sessionStorage.getItem("cartInventory")),
-    JSON.parse(sessionStorage.getItem("cartInventory")).length - 1
+    JSON.parse(sessionStorage.getItem("cartInventory"))[
+      JSON.parse(sessionStorage.getItem("cartInventory")).length - 1
+    ]
   );
 }
 
@@ -104,7 +105,7 @@ export function renderOrder(orderArr, domEl) {
   domEl.innerHTML += ` <tr>
   <td>Totall</td>
   <td>${cartInventory.reduce(
-    (acc, cartInventory) => acc + cartInventory.price,
+    (acc, cartInventory) => parseInt(acc) + parseInt(cartInventory.price),
     0
   )}$</td>
 </tr>   <a class="btn" href="/checkout.html"
@@ -158,30 +159,30 @@ document
     )
   );
 
-export function popUp(data, jacketIndex) {
+export function popUp({ name, color, size, img, id }) {
   document.querySelector(".popUp").innerHTML = `
   <div class="popUp--container">
       <button class="button--x" >X</button>
-      <h2>${data[jacketIndex].name}</h2>
+      <h2>${name}</h2>
       <h3 class="h3--popUp">
         You have sucessfully placed this item in your cart
       </h3>
       <table>
         <tr>
           <td>Color</td>
-          <td>${data[jacketIndex].color}</td>
+          <td>${color}</td>
         </tr>
         <tr>
           <td>Size</td>
-          <td>${data[jacketIndex].size}</td>
+          <td>${size}</td>
         </tr>
       </table>
       
-  <img class="imgPopUp" src=${data[jacketIndex].img} alt=${data[jacketIndex].name} jacket>
+  <img class="imgPopUp" src=${img} alt=${name} jacket>
 
   <div class="button--popUp">
   <a href="product-list.html" class="btn btn--second btn--small">Continue shopping</a>
-  <a href="your-order.html?index=${jacketIndex}" class="btn btn--small">Your Cart</a>
+  <a href="your-order.html?index=${id}" class="btn btn--small">Your Cart</a>
   </div>
   </div>
     `;
@@ -189,7 +190,6 @@ export function popUp(data, jacketIndex) {
   document.querySelector(".button--x").addEventListener("click", () => {
     document.querySelector(".popUp").style.display = "none";
   });
-  console.log(data);
 }
 
 /*

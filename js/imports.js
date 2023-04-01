@@ -1,4 +1,4 @@
-export async function getItems(getItems, callBack) {
+export async function getItems(getItems, callBack, domEL, listenerFunction) {
   const products = await fetch(getItems);
   const productsArr = await products.json();
   console.log({ productsArr });
@@ -45,8 +45,13 @@ export async function getItems(getItems, callBack) {
       };
   console.log({ arrwithImage });
   Array.isArray(arrwithImage)
-    ? arrwithImage.forEach((object) => callBack(object))
+    ? (domEL.innerHTML += arrwithImage
+        .map((object) => callBack(object))
+        .join(""))
     : callBack(arrwithImage);
+  Array.isArray(arrwithImage) &&
+    arrwithImage.forEach((button) => listenerFunction(button));
+  console.log();
 }
 
 export function getValidImageURl(imgStr) {
