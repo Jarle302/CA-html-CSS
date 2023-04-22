@@ -123,7 +123,7 @@ function renderFeatured({ name, short_description, id, images }, domEL) {
   <a href="../product-specifikk.html?id=${id}" class="featured--card">
   <span><h2>Featured</h2></span>
     <div class="featured--card__image-container">
-    <img
+    <img class="featured--card__image"
         src=${getValidImageURl(images[0].src)}
         alt="${name} jacket" />
     </div>
