@@ -1,5 +1,10 @@
+export const api_key = "ck_4f0a4c81702c16a179549269f843d8a929a00ab7";
+export const api_secret = "cs_62e75a49c9254d8445953f4a2e012a57b3debfb3";
 export async function getItems(getItems, callBack, domEL, listenerFunction) {
-  const products = await fetch(getItems);
+  const products = await fetch(getItems, {
+    method: "GET",
+    headers: { Authorization: "Basic " + btoa(`${api_key}:${api_secret}`) },
+  });
   const productsArr = await products.json();
   console.log({ productsArr });
   const arrwithImage = Array.isArray(productsArr)
