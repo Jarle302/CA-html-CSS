@@ -104,7 +104,7 @@
   .featured--card__text-container {
     max-height: calc(3 * 1rem);
     overflow: hidden;
-    transition: height ease 2s;
+    transition: all ease 2s;
   }
   .featured--card:hover .featured--card__text-container {
     max-height: none;
