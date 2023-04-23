@@ -1,5 +1,4 @@
 import { addToCart, cartInventory, popUp } from "./shoppingCart.js";
-import { getContrastColor } from "./GOTTENFROMCHATGPTcontrastfriendlyColor.js";
 import {
   renderList,
   addListener,
