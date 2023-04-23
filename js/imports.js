@@ -103,10 +103,12 @@ export function renderList({ name, prices, images, on_sale, attributes, id }) {
                   </select>
                   ${attributes[0].terms
                     .map(
-                      (color) => ` 
-                    <input type="radio" class="input--radio"  id="color--${
-                      color.name
-                    }${id}" name="color${id}" value="${color.name}" >
+                      (color, index) => ` 
+                    <input type="radio" ${
+                      index === 0 ? "checked" : ""
+                    } class="input--radio"  id="color--${
+                        color.name
+                      }${id}" name="color${id}" value="${color.name}" >
         <label class="label--radio" style="background-color:${
           color.name
         }" for="color--${color.name}${id}"> <span style="color:${
