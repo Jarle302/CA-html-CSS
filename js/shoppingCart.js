@@ -4,8 +4,6 @@ export const cartInventory = sessionStorage.getItem("cartInventory")
 
 export function addToCart(name, images, on_sale, prices, id) {
   console.log({ name, images, on_sale, prices, id });
-  let sizeSelect = "";
-  let colorRadio = "";
 
   cartInventory.push({
     name: name,

@@ -131,3 +131,21 @@ function renderFeatured({ name, short_description, id, images }, domEL) {
 <h3>${name}</h3> <p>${short_description}</p></div>
   </a>`;
 }
+
+fetch("https://jarletollaksen.com/wp-json/wc/v3/products", {
+  method: "GET",
+  headers: { Authorization: "Basic " + btoa(`${api_key}:${api_secret}`) },
+})
+  .then((data) => data.json())
+  .then((data) => {
+    const [featuredProducts, nonFeaturedProducts] = filterFeatured(data);
+    console.log({ featuredProducts }, { nonFeaturedProducts });
+  });
+
+function filterFeatured(arr) {
+  const returnArray = [[], []];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i].featured ? returnArray[0].push(arr[i]) : returnArray[1].push(arr[i]);
+  }
+  return returnArray;
+}

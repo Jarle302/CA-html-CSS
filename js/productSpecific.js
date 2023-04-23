@@ -1,4 +1,3 @@
-import { data } from "./data.js";
 import { addToCart, cartInventory } from "./shoppingCart.js";
 import { getItems, baseUrl } from "./imports.js";
 
