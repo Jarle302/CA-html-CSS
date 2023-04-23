@@ -2,6 +2,11 @@ main {
   padding: 20px;
 }
 
+.container--buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .product-specific__h1 {
   flex-basis: 100%;
 }
@@ -43,9 +48,6 @@ h3 {
 
 .comment__span {
   font-weight: bold;
-}
-
-.product-specific__div {
 }
 
 .product-specific__section {
@@ -92,6 +94,14 @@ h3 {
 
 .h3--popUp {
   color: green;
+}
+
+.label--radio {
+  padding: 4px;
+  border-radius: 5px;
+  width: 10;
+  display: block;
+  width: 50px;
 }
 
 @media screen and (min-width: 650px) {

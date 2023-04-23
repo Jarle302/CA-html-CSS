@@ -19,31 +19,6 @@ productList(
   getAndrenderFeatured
 );
 
-export function fixColors(data, number, colorArr) {
-  return colorArr
-    .map(
-      (color, index) =>
-        ` 
-  <input type="radio" class="input--radio" id="color--${color}${number}" name="color${number}" value="${color}" >
-  <label class="label--radio" style="background-color:${color}" for="color--${color}${number}"> <span style="color:${getContrastColor(
-          data[number].hexColor[index]
-        )}">${color}</span></label>`
-    )
-    .join("");
-}
-
-/*  <form>
-        <div class="container--buttons" >
-<label for="Size${index}">Size</label>
-          <select name="Size" id="Size${index}">
-          ${data[index].size.map(
-            (size) => `<option value=${size}>${size}</option>`
-          )}            
-          </select>
-          ${fixColors(data, index, data[index].color)}            
-</div>
-        </form> */
-
 /* I see that the Ca says to filter Filter Featured products from the list 
 and show these in their own section. But the endpoint that has the featured prop
 dont have the regular price, and sale price, ive read that this is an issue when having

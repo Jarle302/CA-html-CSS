@@ -59,7 +59,7 @@ function renderSpecific({
                   <button id="addToCartButton" class="btn product-specific__button--cta" href="your-order.html?id=${jacketIndex}"
                     >Add to Cart </button>
                     
-                   </div>  <p></p></div> <div><h3>Product info</h3>${description}</div>`;
+                   </div></div> <div><h3>Product info</h3>${description}</div>`;
 
   if (document.querySelector("#addToCartButton"))
     document
