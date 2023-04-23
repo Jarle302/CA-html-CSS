@@ -23,6 +23,7 @@ export async function app(
   }
 }
 
+//This function is written by Abi
 export function getValidImageURl(imgStr) {
   // const imgStr = 'https://jarletollaksen.com/r/n/wp-content/uploads/2023/03/Immovable.png';
   const arr = imgStr.split("/");
