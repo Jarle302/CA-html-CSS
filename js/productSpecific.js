@@ -1,11 +1,10 @@
 import { addToCart, cartInventory } from "./shoppingCart.js";
-import { getItems, baseUrl } from "./imports.js";
+import { app as productSpecific, baseUrl } from "./imports.js";
 
 const queryString = document.location.search;
 const parameters = new URLSearchParams(queryString);
 const jacketIndex = parameters.get("id");
-console.log(jacketIndex);
-getItems(baseUrl + "/" + jacketIndex, renderSpecific);
+productSpecific(baseUrl + "/" + jacketIndex, renderSpecific);
 
 function renderSpecific({
   name,
@@ -90,5 +89,3 @@ fetch("https://jsonplaceholder.typicode.com/comments/").then((data) =>
     document.querySelector(".comments").innerHTML += comments;
   })
 );
-
-console.log(cartInventory);
