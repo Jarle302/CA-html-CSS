@@ -1,4 +1,4 @@
-# Community Science Museum
+# RainyDays
 
 ![image](./images/RainyDays_Logo.png)
 
@@ -6,7 +6,7 @@ This was my crosscourse project at Noroff. We started this in the beginning lear
 
 ## Description
 
-This project as been with me all school year, and show how much i've learned since i started at noroff. There are alot of mistakes i've had to make, and have learned most from those. In the end im happy to have this project as a starting point, but would make several changes if i could do it again. Example the product cards are to cluttered. 
+This project as been with me all school year, and show how much i've learned since i started at noroff. There are alot of mistakes i've had to make, and have learned most from those. In the end im happy to have this project as a starting point, but would make several changes if i could do it again. Example the product cards are to cluttered.
 
 The focus of the page was to be
 
