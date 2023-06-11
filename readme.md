@@ -1,82 +1,58 @@
-# Rainy Days Ca
+# Community Science Museum
+
+![image](./images/RainyDays_Logo.png)
+
+This was my crosscourse project at Noroff. We started this in the beginning learning about figma, then gradually built upon it as we learned more. Going from a figma design, to html and css, to adding javascript and in the end using wordpress as a headless CMS to fetch the product details.
 
 ## Description
 
-This is my html and css CA. I chose the Rainy Days project.
+This project as been with me all school year, and show how much i've learned since i started at noroff. There are alot of mistakes i've had to make, and have learned most from those. In the end im happy to have this project as a starting point, but would make several changes if i could do it again. Example the product cards are to cluttered. 
 
-## Changes from Initial design
+The focus of the page was to be
 
-#### Homepage:
+- Responsive
+- Accessible
+- Aesthetically pleasing
+- having functional javascript
+- use wordpress as a headless cms
 
-I was reccomended by Micheal John Phillip in my teacher review to make the site not so vertically long, by only using one background image instead of two(i had three on mobile aswell). I followed his advice, and made the changes he suggested in the video. A consquence of this is that i had to remove some headings aswell.
+## Built With
 
-He also pointed out that it was unnecessary having the logo on the homepage when it's a part of the header, so i removed that. 
+- Javascript
+- CSS
+- HTML
+- Wordpress
 
-I've also struggled to make the text readable, by having it white it got flagged by wave for having to low contrast, which got fixed by changing in to black, but then it was plain to the naked eye that the text was hard to read. My solution ended up being to have a low opacity backgroundcolor which was enough to give it the needed contrast. This was a problem on many of my pages. In the end i reasoned that staying WCAG compliant was more important than pure aesthetics, but a better solution is something i want to find/learn in the future.  
+## Getting Started
 
-On the unordered list i added a orange border which combined with the background color added some style to the change.
+### Installing
 
+1. Clone the repo:
 
-#### Product-list:
+```bash
+git clone https://github.com/Jarle302/CA-html-CSS.git
+```
 
-Removed the logo which was at top left corner. 
+2. Install the dependencies:
 
-Changed some product names 
+```
+There are no dependencies!
+```
 
-Made navbar the same as on the other pages.(Had a white background color in my design)
+### Running
 
-#### About:
-Added background-color to heading
+Link to live site:
 
-#### Contact:
-Made navbar consistent with the other pages
+```
+ https://lively-sawine-3262d2.netlify.app/
+```
 
-Fixed heading contrast by adding background-color
+## Contributing
 
-Used a colored version of the background image 
+If you want to help make the site even better, open a pull request and i will review your changes, thanks in advance!
 
-#### Your order:
-Minor changes to the text
+## Contact
 
-#### Order-specific:
-added select to decide jacket size
+[My email](mailto:jarlehtollaksen2@live.no)
 
-#### Checkout:
-none/minor changes. Note in my figma file the mobile and desktop version are different from eachother, this was an oversight when i was making the design and the styling on the mobile one is what i intended to have on both of them. 
-
-#### order_success
-none/minor changes
-
-#### Header/footer
-i optet to have a header footer on both mobile and desktop, i added a background-color to desktop to improve readability. 
-
-
-## References
- ##### All images from unsplash.com 
- ##### Vipps icon from https://iconify.design/
- ##### All other icons from https://fontawesome.com/ 
-
-##### I used https://css-tricks.com/snippets/css/css-triangle/ to learn how to make a triangle. 
-##### I used https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path to learn about clip path
-
-##### I used the checkbox hack as explained by noroff.
-##### I used grid to make the footer stay at the bottom as explained by noroff. 
-
-
-
-
-### Executing program
-
-Link to my site:
-
-https://lighthearted-sundae-2313cf.netlify.app/index.html?fbclid=IwAR0MfX4I3qYvNEgBEo5AeIQZHwpmKaYY3oC_KPtD2XDdKmgHjCFigP9KlKM
-
-
-link to the design: 
-
-https://www.figma.com/file/hkeCgf7L3GHZFEPrZIAF2D/2022-09-24_Design1_ca_Jarle-Tollaksen_fp?node-id=0%3A1
-
-## Authors
-
-Jarle Tollaksen
-
+[My facebook page](https://www.facebook.com/jarle.tollaksen.3/)
